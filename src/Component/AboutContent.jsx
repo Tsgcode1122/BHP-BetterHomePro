@@ -23,7 +23,7 @@ const AboutContent = () => {
             solutions to meet your needs and exceed expectations.
           </p>
         </DownToUp>
-        <StyledButton href="/appointment">Book a Service </StyledButton>
+        <StyledButton to="/appointment">Book a Service </StyledButton>
 
         <Image>{/* <img src={heroimg} /> */}</Image>
       </Contain>
@@ -32,7 +32,7 @@ const AboutContent = () => {
   );
 };
 
-const StyledButton = styled.a`
+const StyledButton = styled(Link)`
   padding: 10px 20px;
   background-color: ${Colors.darkgreen};
   color: #fff;

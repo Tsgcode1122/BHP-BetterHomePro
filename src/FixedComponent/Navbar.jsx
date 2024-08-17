@@ -79,10 +79,10 @@ const Navbar = () => {
               <span>Contact Us</span>
               <IoMdArrowDropright />
             </LinkCont>
-            <LinkContA href="/appointment" onClick={closeSidebar}>
+            <LinkCont to="/appointment" onClick={closeSidebar}>
               <span>Book a Service</span>
               <IoMdArrowDropright />
-            </LinkContA>
+            </LinkCont>
             <LinkCont to="/gallery" onClick={closeSidebar}>
               <span>Gallery</span>
               <IoMdArrowDropright />

@@ -153,15 +153,15 @@ const ImageWrapper = styled.div`
     height: auto;
     border-bottom: 1px solid #ddd;
     @media screen and (max-width: 320px) {
-      min-height: 180px;
+      min-height: 170px;
       max-height: 180px;
     }
     @media (min-width: 321px) and (max-width: 399px) {
-      min-height: 230px;
+      min-height: 200px;
       max-height: 230px;
     }
     @media (min-width: 400px) and (max-width: 499px) {
-      min-height: 230px;
+      min-height: 200px;
       max-height: 230px;
     }
   }

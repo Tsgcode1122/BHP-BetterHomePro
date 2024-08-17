@@ -95,7 +95,7 @@ const HeroButton = styled(Link)`
     background-color: ${Colors.green};
   }
 `;
-const HeroButton2 = styled.a`
+const HeroButton2 = styled(Link)`
   padding: 10px 20px;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -159,7 +159,7 @@ const Hero = () => (
           </HeroWriteup>
           <Cta>
             <HeroButton to="/contact">Get a Free Quote</HeroButton>
-            <HeroButton2 href="/appointment">Book a Service</HeroButton2>
+            <HeroButton2 to="/appointment">Book a Service</HeroButton2>
           </Cta>
         </Content>
         <Seperate>

@@ -33,7 +33,7 @@ const SingleService = () => {
           </ServiceDescription>
         </ZoomInComponent>
         <ServiceButtons>
-          <Button href={service.bookServiceUrl}>Book Service Now</Button>
+          <Button to={service.bookServiceUrl}>Book Service Now</Button>
           <Button2 to={service.getQuoteUrl}>Get a Free Quote Now</Button2>
         </ServiceButtons>
         <ServiceBenefits>
@@ -112,7 +112,7 @@ const ServiceButtons = styled.div`
   margin-bottom: 20px;
 `;
 
-const Button = styled.a`
+const Button = styled(Link)`
   padding: 10px 20px;
   background: ${Gradients.lightToDark};
   color: #fff;
