@@ -34,15 +34,15 @@ const DownToUp = ({ children }) => {
 
   const itemVariants = {
     hidden: {
-      y: 20, // Start slightly below the original position
+      y: 30, // Start slightly below the original position
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         type: "spring",
-        stiffness: 50,
-        duration: 0.5,
+        stiffness: 40,
+        duration: 0.3,
       },
     },
   };
