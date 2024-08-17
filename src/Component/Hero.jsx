@@ -13,7 +13,7 @@ const HeroContainer = styled.section`
   align-items: left;
   position: relative;
   background: ${Gradients.greenToDarkGreen} !important;
-
+  padding: 0 !important;
   background-size: cover;
   background-position: center;
   color: ${Colors.forest};
@@ -21,6 +21,7 @@ const HeroContainer = styled.section`
 `;
 const HeroBg = styled.div`
   justify-content: center;
+  padding: 0 !important;
   align-items: left;
   position: relative;
   /* background: url(${herobg}) !important; */
@@ -112,13 +113,14 @@ const HeroButton2 = styled.a`
 const Image = styled.div`
   /* margin-left: 2rem; */
   @media screen and (max-width: 320px) {
-    margin-left: 1rem;
+    padding: 0 0.5rem 0rem 0.5rem;
   }
+
   @media (min-width: 321px) and (max-width: 399px) {
-    margin-left: 1rem;
+    padding: 0 1rem 0rem 1rem;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    margin-left: 1rem;
+    padding: 0 1rem 0rem 1rem;
   }
   /* border-radius: 20px 0 0 20px; */
   padding: 0 2rem 0rem 2rem;
@@ -133,9 +135,8 @@ const Seperate = styled.div`
   border-radius: 30px 30px 0 0;
   box-shadow:
     rgba(0, 0, 0, 0.7) 0px 1px 3px,
-    rgba(0, 0, 0, 0.94) 0px 1px 2px;
+    rgba(0, 0, 0, 0.5) 0px 0px 0px;
   margin-top: 6rem;
-  margin-bottom: 20px;
 `;
 const Cta = styled.div`
   display: flex;

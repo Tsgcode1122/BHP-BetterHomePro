@@ -31,16 +31,16 @@ const SubHeading = styled.p`
   text-align: center;
   font-weight: 400;
   @media screen and (max-width: 320px) {
-    font-size: 0.7rem;
-    padding: 0 60px;
+    font-size: 1rem;
+    padding: 10px;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    font-size: 0.7rem;
-    padding: 0 70px;
+    font-size: 1rem;
+    padding: 10px;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    font-size: 0.7rem;
-    padding: 0 70px;
+    font-size: 1rem;
+    padding: 10px;
   }
 `;
 
@@ -64,16 +64,10 @@ const ImageWrapper = styled.div`
   }
 
   @media screen and (max-width: 320px) {
-    min-width: 250px;
-    padding: 8px;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    min-width: 250px;
-    padding: 8px;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    min-width: 250px;
-    padding: 8px;
   }
 `;
 
