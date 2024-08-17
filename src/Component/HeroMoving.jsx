@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import i1 from "../assets/Images/clean.png";
-import i2 from "../assets/Images/air-conditioning.png";
-import i3 from "../assets/Images/chimney.png";
-import i4 from "../assets/Images/power-washing.png";
-import i5 from "../assets/Images/maintenance.png";
+import i1 from "../Images/clean.png";
+import i2 from "../Images/air-conditioning.png";
+import i3 from "../Images/chimney.png";
+import i4 from "../Images/power-washing.png";
+import i5 from "../Images/maintenance.png";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 const HeroMoving = () => {
   const items = [

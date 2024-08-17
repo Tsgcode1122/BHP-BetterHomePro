@@ -13,7 +13,7 @@ import {
   LoginOutlined,
 } from "@ant-design/icons";
 import { IoMdArrowDropright } from "react-icons/io";
-import logo from "../assets/Images/Logoo.png";
+import logo from "../Images/Logoo.png";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);

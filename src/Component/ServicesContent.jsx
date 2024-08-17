@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Skeleton } from "antd";
-import heroimg2 from "../assets/Images/t5.jpg";
-import heroimg from "../assets/Images/t2.jpg";
-import heroimg3 from "../assets/Images/t4.jpg";
-import heroimg4 from "../assets/Images/cart.jpg";
-import heroimg5 from "../assets/Images/t6.jpg";
+import heroimg2 from "../Images/t5.jpg";
+import heroimg from "../Images/t2.jpg";
+import heroimg3 from "../Images/t4.jpg";
+import heroimg4 from "../Images/cart.jpg";
+import heroimg5 from "../Images/t6.jpg";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import { Link } from "react-router-dom";
 import DownToUp from "../Motion/DownToUp";

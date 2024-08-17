@@ -3,22 +3,22 @@ import styled from "styled-components";
 import Modal from "antd/es/modal";
 
 // Importing images
-import img1 from "../assets/Images/b.jpg";
-import img2 from "../assets/Images/bb.jpg";
-import img3 from "../assets/Images/bbb.jpg";
-import img4 from "../assets/Images/t7.jpg";
-import img5 from "../assets/Images/t1.jpg";
-import img6 from "../assets/Images/t2.jpg";
-import img7 from "../assets/Images/t3.jpg";
-import img8 from "../assets/Images/t4.jpg";
-import img9 from "../assets/Images/t5.jpg";
-import img10 from "../assets/Images/t6.jpg";
-import img11 from "../assets/Images/ceo3.jpg";
-import img12 from "../assets/Images/ceo2.jpg";
-import img13 from "../assets/Images/ceo1.jpg";
-import img14 from "../assets/Images/t8.jpg";
-import img15 from "../assets/Images/t9.jpg";
-import img16 from "../assets/Images/t10.jpg";
+import img1 from "../Images/b.jpg";
+import img2 from "../Images/bb.jpg";
+import img3 from "../Images/bbb.jpg";
+import img4 from "../Images/t7.jpg";
+import img5 from "../Images/t1.jpg";
+import img6 from "../Images/t2.jpg";
+import img7 from "../Images/t3.jpg";
+import img8 from "../Images/t4.jpg";
+import img9 from "../Images/t5.jpg";
+import img10 from "../Images/t6.jpg";
+import img11 from "../Images/ceo3.jpg";
+import img12 from "../Images/ceo2.jpg";
+import img13 from "../Images/ceo1.jpg";
+import img14 from "../Images/t8.jpg";
+import img15 from "../Images/t9.jpg";
+import img16 from "../Images/t10.jpg";
 
 const images = [
   img1,

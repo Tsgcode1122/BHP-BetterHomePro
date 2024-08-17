@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import ceo1 from "../assets/Images/ceo1.jpg";
-import ceo2 from "../assets/Images/ceo2.jpg";
-import ceo3 from "../assets/Images/ceo3.jpg";
+import ceo1 from "../Images/ceo1.jpg";
+import ceo2 from "../Images/ceo2.jpg";
+import ceo3 from "../Images/ceo3.jpg";
 import { Colors } from "../Colors/ColorComponent";
 
 const Cont = styled.div`

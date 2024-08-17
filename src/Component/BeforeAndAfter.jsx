@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
-import a1 from "../assets/Images/a1.png";
-import a1b from "../assets/Images/a1b.png";
-import a2 from "../assets/Images/a2.png";
-import a2b from "../assets/Images/a2b.png";
-import a3 from "../assets/Images/a3b.png";
-import a3b from "../assets/Images/a3.png";
-import a4 from "../assets/Images/a4b.jpg";
-import a4b from "../assets/Images/a4.jpg";
+import a1 from "../Images/a1.png";
+import a1b from "../Images/a1b.png";
+import a2 from "../Images/a2.png";
+import a2b from "../Images/a2b.png";
+import a3 from "../Images/a3b.png";
+import a3b from "../Images/a3.png";
+import a4 from "../Images/a4b.jpg";
+import a4b from "../Images/a4.jpg";
 
 const images = [
   {

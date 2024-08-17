@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import PageHeading from "../FixedComponent/PageHeading";
-import backgroundImage from "../assets/Images/newIm.jpg";
+import backgroundImage from "../Images/newIm.jpg";
 
 import {
   MailOutlined,

@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Colors } from "../Colors/ColorComponent";
-import i1 from "../assets/Images/clean.png";
+import i1 from "../Images/clean.png";
 import ZoomInComponent from "../Motion/ZoomInComponent";
 const Container = styled.div`
   display: flex;

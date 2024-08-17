@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Colors, Gradients } from "../Colors/ColorComponent";
-import heroimg from "../assets/Images/heroImage.png";
-import herobg from "../assets/Images/t14.png";
+import heroimg from "../Images/heroImage.png";
+import herobg from "../Images/t14.png";
 import HeroMoving from "./HeroMoving";
 import WaterBubblesBackground from "../FixedComponent/WaterBubblesBackground";
 import ZoomInComponent from "../Motion/ZoomInComponent";

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaMedal, FaThumbsUp, FaSmile, FaTools } from "react-icons/fa";
-import videoBg from "../assets/Images/carpet.jpg";
+import videoBg from "../Images/carpet.jpg";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import Heading from "../FixedComponent/Heading";
 import Button from "../FixedComponent/Button";

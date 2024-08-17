@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { serviceData } from "./ServiceData";
-import CheckOutlined from "../assets/Images/checked.png";
+import CheckOutlined from "../Images/checked.png";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 
 import Heading from "../FixedComponent/Heading";

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import PageHeading from "../FixedComponent/PageHeading";
-import backgroundImage from "../assets/Images/newIm.jpg";
+import backgroundImage from "../Images/newIm.jpg";
 import GalleryContent from "../Component/GalleryContent";
 import Before from "../Component/Before";
 const Gallery = () => {

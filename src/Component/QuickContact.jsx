@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import imgb from "../assets/Images/t7.jpg";
+import imgb from "../Images/t7.jpg";
 import {
   MailOutlined,
   PhoneOutlined,

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Colors, Gradients } from "../Colors/ColorComponent";
-import heroimg from "../assets/Images/newIm.jpg";
+import heroimg from "../Images/newIm.jpg";
 import Button from "../FixedComponent/Button";
 
 import DownToUp from "../Motion/DownToUp";

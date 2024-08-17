@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import logo from "../assets/Images/Logoo.png";
+import logo from "../Images/Logoo.png";
 import { Form, Input, Button as AntdButton } from "antd";
 import { FaFacebookF, FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa";
 import { Colors } from "../Colors/ColorComponent";
