@@ -12,20 +12,21 @@ const moveDroplets = keyframes`
     opacity: 1;
   }
   to {
-    transform: translateY(-200px);
+    transform: translateY(-300px);
     opacity: 0;
   }
 `;
 
 const Droplet = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-image: url(${(props) => props.img});
   background-size: cover;
   position: absolute;
-  top: ${() => Math.random() * 100}%;
-  left: ${() => Math.random() * 100}%;
-  animation: ${moveDroplets} ${() => Math.random() * 10 + 5}s linear infinite;
+  top: ${(props) => props.top}%;
+  left: ${(props) => props.left}%;
+  animation: ${moveDroplets} ${(props) => props.duration}s linear infinite;
+  animation-delay: ${(props) => props.delay}s;
 `;
 
 const Background = styled.div`
@@ -33,17 +34,18 @@ const Background = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  pointer-events: none;
 `;
 
 const WaterDropletsBackground = () => {
-  const [numDroplets, setNumDroplets] = useState(5);
+  const [numDroplets, setNumDroplets] = useState(15);
 
   useEffect(() => {
     const updateNumDroplets = () => {
       if (window.innerWidth >= 1000) {
-        setNumDroplets(10);
+        setNumDroplets(20);
       } else {
-        setNumDroplets(5);
+        setNumDroplets(10);
       }
     };
 
@@ -55,10 +57,27 @@ const WaterDropletsBackground = () => {
     };
   }, []);
 
+  const generateRandomPosition = () => {
+    // Use random numbers for both top and left positions to ensure an even spread
+    const top = Math.random() * 100;
+    const left = Math.random() * 100;
+    return { top, left };
+  };
+
   const dropletImages = [droplet1, droplet2, droplet3, droplet4, droplet5];
-  const dropletElements = Array.from({ length: numDroplets }, (_, index) => (
-    <Droplet key={index} img={dropletImages[index % dropletImages.length]} />
-  ));
+  const dropletElements = Array.from({ length: numDroplets }, (_, index) => {
+    const { top, left } = generateRandomPosition();
+    return (
+      <Droplet
+        key={index}
+        img={dropletImages[index % dropletImages.length]}
+        top={top}
+        left={left}
+        duration={Math.random() * 15 + 5}
+        delay={Math.random() * 5}
+      />
+    );
+  });
 
   return <Background>{dropletElements}</Background>;
 };

@@ -19,6 +19,7 @@ import img13 from "../Images/ceo1.jpg";
 import img14 from "../Images/t8.jpg";
 import img15 from "../Images/t9.jpg";
 import img16 from "../Images/t10.jpg";
+import VideoGallery from "./VideoGallery";
 
 const images = [
   img1,
@@ -67,6 +68,8 @@ const GalleryContent = () => {
       <Modal visible={visible} footer={null} onCancel={handleCancel}>
         <ModalImage src={currentImage} alt="Full Image" />
       </Modal>
+
+      <VideoGallery/>
     </>
   );
 };

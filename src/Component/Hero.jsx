@@ -7,6 +7,7 @@ import HeroMoving from "./HeroMoving";
 import WaterBubblesBackground from "../FixedComponent/WaterBubblesBackground";
 import ZoomInComponent from "../Motion/ZoomInComponent";
 import { Link } from "react-router-dom";
+import WaterDropletsBackground from "../Motion/WaterDropletsBackground";
 
 const HeroContainer = styled.section`
   justify-content: center;
@@ -156,6 +157,7 @@ const Hero = () => (
   <HeroContainer>
     <HeroBg>
       <WaterBubblesBackground />
+      <WaterDropletsBackground />
       <HeroContent>
         <Content>
           <ZoomInComponent>

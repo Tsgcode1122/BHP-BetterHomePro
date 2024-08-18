@@ -13,6 +13,7 @@ import {
 import ColorComponent, { Colors } from "../Colors/ColorComponent";
 import styled from "styled-components";
 import ContactUs from "../Component/ContactUs";
+import WaterDropletsBackground from "../Motion/WaterDropletsBackground";
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,6 +26,7 @@ const Contact = () => {
         intro="Get in Touch: We're here to assist you with any inquiries or requests. Reach out to us for personalized support and prompt responses to ensure your needs are met."
       />
       <Container>
+        <WaterDropletsBackground />
         <h3>Get An Instant Quote Now!</h3>
         <Content>
           <ContactItem>
@@ -66,6 +68,8 @@ const Contact = () => {
 
 export default Contact;
 const Container = styled.div`
+  position: relative;
+  overflow: hidden;
   padding: 20px 20px 200px 20px;
   background: ${Colors.light};
   h3 {
@@ -78,6 +82,7 @@ const Container = styled.div`
 `;
 const Content = styled.div`
   display: flex;
+  position: relative;
   align-items: center;
   gap: 20px;
   justify-content: center;

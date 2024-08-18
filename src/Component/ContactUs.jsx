@@ -119,6 +119,7 @@ const ContactUs = () => {
 export default ContactUs;
 
 const FormContainer = styled.div`
+  position: relative;
   border-radius: 10px;
   margin: -10rem 2rem 2rem 2rem;
   background: ${Colors.lightgreen};

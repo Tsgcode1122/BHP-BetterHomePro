@@ -37,7 +37,7 @@ const Before = () => {
   return (
     <Container>
       <Heading>Transformation</Heading>
-      <SubHeading>Slide to reveal the transformation.</SubHeading>
+      <SubHeading>Slide to reveal Before and After.</SubHeading>
       <BeforeAndAfter />
     </Container>
   );

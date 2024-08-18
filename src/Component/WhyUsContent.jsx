@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaMedal, FaThumbsUp, FaSmile, FaTools } from "react-icons/fa";
-import videoBg from "../Images/carpet.jpg";
+import videoBg from "../Images/t13.jpg";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import Heading from "../FixedComponent/Heading";
 import Button from "../FixedComponent/Button";
@@ -97,7 +97,7 @@ const ContentWrapper = styled.div`
   justify-content: space-around;
   gap: 20px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
   position: relative;
 `;
 const Join = styled.div`

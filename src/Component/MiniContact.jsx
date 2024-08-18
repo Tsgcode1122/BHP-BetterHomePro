@@ -11,10 +11,12 @@ import {
 import ColorComponent, { Colors } from "../Colors/ColorComponent";
 
 import Heading from "../FixedComponent/Heading";
+import WaterDropletsBackground from "../Motion/WaterDropletsBackground";
 const MiniContact = () => {
   return (
     <>
       <Container>
+        <WaterDropletsBackground />
         <Heading>Contact Us</Heading>
         <h3>Get An Instant Quote Now!</h3>
         <Content>
@@ -56,6 +58,8 @@ const MiniContact = () => {
 
 export default MiniContact;
 const Container = styled.div`
+  position: relative;
+  overflow: hidden;
   padding: 20px 20px 200px 20px;
   background: ${Colors.darkgreen};
   h3 {
@@ -68,6 +72,7 @@ const Container = styled.div`
 `;
 const Content = styled.div`
   display: flex;
+  position: relative;
   align-items: center;
   gap: 20px;
   justify-content: center;
