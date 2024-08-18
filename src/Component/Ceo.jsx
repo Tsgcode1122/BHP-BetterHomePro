@@ -61,6 +61,18 @@ const ImageWrapper = styled.div`
     height: 20rem;
     min-width: 300px;
     border-radius: 10px;
+    @media screen and (max-width: 320px) {
+      min-width: 200px;
+      height: 14rem;
+    }
+    @media (min-width: 321px) and (max-width: 399px) {
+      min-width: 220px;
+      height: 16rem;
+    }
+    @media (min-width: 400px) and (max-width: 499px) {
+      min-width: 260px;
+      height: 20rem;
+    }
   }
 
   @media screen and (max-width: 320px) {

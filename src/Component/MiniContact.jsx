@@ -85,7 +85,7 @@ const ContactItem = styled.div`
   color: ${Colors.coolBlack};
 
   &:hover {
-    background: #223a00;
+    background: #cbd8b9;
   }
   a {
     color: ${Colors.coolBlack};

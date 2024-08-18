@@ -39,6 +39,15 @@ const QuickContact = () => {
       color: white;
       font-weight: 800;
     }
+    @media screen and (max-width: 320px) {
+      padding: 0.3rem;
+    }
+    @media (min-width: 321px) and (max-width: 399px) {
+      padding: 0.3rem;
+    }
+    @media (min-width: 400px) and (max-width: 499px) {
+      padding: 0.5rem;
+    }
   `;
 
   const ContactItem = styled.div`
