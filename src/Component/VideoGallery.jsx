@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 import heroimg from "../Images/t13.jpg";
-import heroimg2 from "../Images/t2.jpg";
-import heroimg3 from "../Images/t4.jpg";
-import heroimg4 from "../Images/t8.jpg";
-import heroimg5 from "../Images/t6.jpg";
+import heroimg2 from "../Images/t8.jpg";
+import heroimg3 from "../Images/t21.jpg";
+import heroimg4 from "../Images/t20.jpg";
+
 import Heading from "../FixedComponent/Heading";
 import { Colors } from "../Colors/ColorComponent";
 
@@ -18,6 +18,15 @@ const GalleryWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  @media screen and (max-width: 320px) {
+    padding: 5px;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 10px;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 10px;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -28,8 +37,9 @@ const ImageWrapper = styled.div`
   margin: 10px;
 
   img {
-    width: ${(props) => props.width || "200px"};
-    min-height: ${(props) => props.height || "250px"};
+    max-width: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
   }
@@ -38,7 +48,17 @@ const ImageWrapper = styled.div`
     transform: scale(1.05);
   }
 `;
-
+const BlurOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: ${(props) => (props.visible ? "block" : "none")};
+`;
 const PlayIconWrapper = styled.div`
   position: absolute;
   top: 50%;
@@ -64,7 +84,7 @@ const VideoWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 450px;
+  height: auto;
 `;
 
 const SubHeading = styled.p`
@@ -88,15 +108,14 @@ const Container = styled.div`
 
 // Example Cloudinary video links
 const videos = [
-  "https://res.cloudinary.com/demo/video/upload/w_800,c_limit,ar_16:9/vc_auto/sample.mp4",
+  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723984777/RPReplay_Final1723980643_dfuwxe.mov",
   "https://res.cloudinary.com/demo/video/upload/w_800,c_limit,ar_16:9/vc_auto/sample2.mp4",
-  "https://res.cloudinary.com/demo/video/upload/w_800,c_limit,ar_16:9/vc_auto/sample3.mp4",
-  "https://res.cloudinary.com/demo/video/upload/w_800,c_limit,ar_16:9/vc_auto/sample4.mp4",
-  "https://res.cloudinary.com/demo/video/upload/w_800,c_limit,ar_16:9/vc_auto/sample5.mp4",
+  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723986786/RPReplay_Final1723980761_z8lucn.mov",
+  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723984777/RPReplay_Final1723980643_dfuwxe.mov",
 ];
 
 // Example images associated with the videos
-const images = [heroimg, heroimg2, heroimg3, heroimg4, heroimg5];
+const images = [heroimg, heroimg2, heroimg3, heroimg4];
 
 const VideoGallery = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -130,35 +149,11 @@ const VideoGallery = () => {
     <Container>
       <SubHeading>Click to Watch Videos.</SubHeading>
       <GalleryWrapper>
-        {/* First image taking full screen */}
-        <ImageWrapper
-          width="100%"
-          height="auto"
-          onClick={() => showModal(videos[0])}
-        >
-          <img src={images[0]} alt="Thumbnail 1" />
-          <PlayIconWrapper>
-            <WaterCircleEffect
-              animate={{ scale: [0.6, 1, 0.7], opacity: [0.8, 0.4, 0] }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-            <PlayCircleOutlined
-              style={{ fontSize: "48px", color: "#fff", zIndex: 1 }}
-            />
-          </PlayIconWrapper>
-        </ImageWrapper>
-
         {/* Remaining four images with custom width and height */}
-        {images.slice(1).map((image, index) => (
+        {images.map((image, index) => (
           <ImageWrapper
             key={index + 1}
-            max-width="calc(500px - 20px)"
-            min-height="250px"
-            onClick={() => showModal(videos[index + 1])}
+            onClick={() => showModal(videos[index])}
           >
             <img src={image} alt={`Thumbnail ${index + 2}`} />
             <PlayIconWrapper>
@@ -177,26 +172,22 @@ const VideoGallery = () => {
           </ImageWrapper>
         ))}
       </GalleryWrapper>
-
+      <BlurOverlay visible={isModalVisible} />
       <Modal
         title="Watch Video"
         open={isModalVisible}
         onCancel={handleCancel}
         footer={null}
-        width={800}
+        centered
       >
         <VideoWrapper>
-          {loading ? (
-            <Spin size="large" />
-          ) : (
-            <video
-              id="video-player"
-              width="100%"
-              controls
-              src={videoUrl}
-              autoPlay
-            />
-          )}
+          <video
+            id="video-player"
+            width="100%"
+            controls
+            src={videoUrl}
+            autoPlay
+          />
         </VideoWrapper>
       </Modal>
     </Container>
