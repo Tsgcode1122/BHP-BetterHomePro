@@ -124,6 +124,14 @@ const ServicesContainer = styled.div`
     gap: 40px;
     margin-top: 30px;
   }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 800px) {
+  }
+  @media screen and (min-width: 1000px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 `;
 
 const ServiceCard = styled.div`
@@ -139,6 +147,18 @@ const ServiceCard = styled.div`
 
   &:hover {
     transform: translateY(-5px);
+  }
+  @media screen and (min-width: 600px) {
+    max-width: 500px;
+  }
+  @media screen and (min-width: 800px) {
+    max-width: 330px;
+  }
+  @media screen and (min-width: 1000px) {
+    max-width: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 500px;
   }
 `;
 
