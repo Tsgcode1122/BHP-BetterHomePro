@@ -16,6 +16,9 @@ const QuickContact = () => {
     position: relative;
     max-width: 600px;
     margin: auto;
+    @media screen and (max-width: 320px) {
+      padding: 0rem;
+    }
   `;
 
   const Content = styled.div`
@@ -23,6 +26,9 @@ const QuickContact = () => {
     img {
       max-width: 100%;
       border-radius: 20px;
+      @media screen and (max-width: 320px) {
+        border-radius: 0px;
+      }
     }
   `;
 
@@ -34,6 +40,9 @@ const QuickContact = () => {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 1rem;
     border-radius: 10px;
+    @media screen and (max-width: 320px) {
+      right: 0.4rem;
+    }
     backdrop-filter: blur(3px);
     p {
       color: white;

@@ -61,7 +61,7 @@ const Container = styled.div``;
 const Contain = styled.div`
   text-align: center;
   p {
-    line-height: 1.3;
+    line-height: 1.5;
     padding: 1rem;
     margin-bottom: 1rem;
   }

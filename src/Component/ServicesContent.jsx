@@ -112,7 +112,7 @@ const ServicesContainer = styled.div`
   margin-top: 20px;
   padding: 10px;
   @media screen and (max-width: 320px) {
-    padding: 15px;
+    padding: 5px;
   }
   @media (min-width: 321px) and (max-width: 399px) {
     padding: 9px;

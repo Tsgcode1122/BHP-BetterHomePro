@@ -78,7 +78,17 @@ const HeroWriteup = styled.p`
   font-size: 18px;
 
   margin-bottom: 20px;
-  line-height: 1.1;
+  line-height: 1.3;
+  @media screen and (max-width: 320px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 321px) and (max-width: 399px) {
+    font-size: 16px;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    font-size: 16px;
+  }
 `;
 const HeroButton = styled(Link)`
   padding: 10px 20px;
