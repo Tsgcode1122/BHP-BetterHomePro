@@ -24,10 +24,10 @@ const AboutContent = () => {
           </p>
         </DownToUp>
         <StyledButton to="/appointment">Book a Service </StyledButton>
-
-        <Image>{/* <img src={heroimg} /> */}</Image>
       </Contain>
-      <Ceo />
+      <Group>
+        <Ceo />
+      </Group>
     </Container>
   );
 };
@@ -44,26 +44,51 @@ const StyledButton = styled(Link)`
     background-color: ${Colors.green};
   }
 `;
-const Image = styled.div`
-  /* margin-right: 2rem; */
-  margin-top: 2rem;
-  border-radius: 40px 40px 0 0;
-  box-shadow:
-    rgba(0, 0, 0, 0.12) 0px 1px 3px,
-    rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  /* padding: 20px 20px 20px 100px; */
-  img {
-    border-radius: 40px 40px 0 0;
-    max-width: 100%;
+
+const Container = styled.div`
+  @media screen and (min-width: 800px) {
+    padding: 0 2rem;
+  }
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    padding: 0 4rem;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 8rem;
   }
 `;
-const Container = styled.div``;
+const Group = styled.div`
+  @media screen and (min-width: 1000px) {
+    flex: 1;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+`;
 const Contain = styled.div`
   text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
   p {
     line-height: 1.5;
     padding: 1rem;
     margin-bottom: 1rem;
+    @media screen and (min-width: 600px) {
+      padding: 0rem 3rem 0 3rem;
+    }
+    @media screen and (min-width: 800px) {
+      padding: 0rem 5rem 0 5rem;
+    }
+    @media screen and (min-width: 1000px) {
+      padding: 0rem;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0rem;
+    }
   }
 `;
 export default AboutContent;

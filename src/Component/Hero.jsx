@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import heroimg from "../Images/heroImage.png";
-import heroB from "../Images/herot.png";
+import heroB from "../Images/cl.png";
 import herobg from "../Images/t14.png";
 import HeroMoving from "./HeroMoving";
 import WaterBubblesBackground from "../FixedComponent/WaterBubblesBackground";
@@ -20,8 +20,6 @@ const HeroContainer = styled.section`
   background-position: center;
   color: ${Colors.forest};
   text-align: center;
-  @media screen and (min-width: 1000px) {
-  }
 `;
 const HeroBg = styled.div`
   justify-content: center;
@@ -58,11 +56,15 @@ const Content = styled.div`
   }
   @media screen and (min-width: 1200px) {
     padding: 3rem 8rem 3rem 8rem;
+    max-width: 1200px;
   }
 `;
 const HeroContent = styled.div`
   position: relative;
   @media screen and (min-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -85,10 +87,10 @@ const HeroTitle = styled.h1`
     font-size: 48px;
   }
   @media screen and (min-width: 1000px) {
-    font-size: 40px;
+    font-size: 48px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 40px;
+    font-size: 52px;
   }
 `;
 
@@ -115,9 +117,11 @@ const HeroWriteup = styled.p`
   }
   @media screen and (min-width: 1000px) {
     font-size: 20px;
+    padding: 0 4rem;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
+    padding: 0 8rem;
   }
 `;
 const HeroButton = styled(Link)`
@@ -167,12 +171,6 @@ const Image = styled.div`
   @media screen and (min-width: 800px) {
     padding: 0 4rem 0rem 4rem;
   }
-  @media screen and (min-width: 1000px) {
-    padding: 0rem;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 0 4rem 0rem 4rem;
-  }
 
   padding: 0 2rem 0rem 2rem;
 
@@ -198,8 +196,15 @@ const HeroBig = styled.div`
   }
   display: none;
   @media screen and (min-width: 1000px) {
+    margin-top: -4rem;
     flex: 1;
     display: block;
+    padding: 0 4rem 0rem 4rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: -6rem;
+    max-width: 1200px;
+    padding: 0 4rem 0rem 4rem;
   }
 `;
 const Seperate = styled.div`
@@ -217,6 +222,14 @@ const Seperate = styled.div`
 const Cta = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
+  @media screen and (min-width: 1000px) {
+    padding: 0 8rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 10rem;
+    max-width: 1200px;
+  }
 `;
 const Show = styled.div`
   @media screen and (min-width: 1000px) {

@@ -43,7 +43,7 @@ const WaterDropletsBackground = () => {
   useEffect(() => {
     const updateNumDroplets = () => {
       if (window.innerWidth >= 1000) {
-        setNumDroplets(20);
+        setNumDroplets(30);
       } else {
         setNumDroplets(10);
       }

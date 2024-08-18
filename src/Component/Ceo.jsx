@@ -10,6 +10,19 @@ const Cont = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 600px) {
+    padding: 1rem 2rem;
+  }
+  @media screen and (min-width: 800px) {
+    padding: 1rem 3rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 1rem;
+    max-width: 500px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 1rem;
+  }
 `;
 const Container = styled.div`
   color: ${Colors.forest};
@@ -51,7 +64,7 @@ const ImageWrapper = styled.div`
   background: #fffefe;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  text-align: left;
+  text-align: center;
   margin: 20px 10px;
   scroll-snap-align: center;
   overflow: hidden;
@@ -61,6 +74,7 @@ const ImageWrapper = styled.div`
     height: 20rem;
     min-width: 300px;
     border-radius: 10px;
+
     @media screen and (max-width: 320px) {
       min-width: 200px;
       height: 14rem;
