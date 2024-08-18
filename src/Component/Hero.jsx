@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import heroimg from "../Images/heroImage.png";
+import heroB from "../Images/herot.png";
 import herobg from "../Images/t14.png";
 import HeroMoving from "./HeroMoving";
 import WaterBubblesBackground from "../FixedComponent/WaterBubblesBackground";
@@ -19,6 +20,8 @@ const HeroContainer = styled.section`
   background-position: center;
   color: ${Colors.forest};
   text-align: center;
+  @media screen and (min-width: 1000px) {
+  }
 `;
 const HeroBg = styled.div`
   justify-content: center;
@@ -43,9 +46,24 @@ const Content = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 1rem 1rem 0 1rem;
   }
+  @media screen and (min-width: 600px) {
+    padding: 3rem 3rem 0 3rem;
+  }
+  @media screen and (min-width: 800px) {
+    padding: 3rem 5rem 0 5rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 3rem 5rem 2rem 5rem;
+    flex: 1;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 3rem 8rem 3rem 8rem;
+  }
 `;
 const HeroContent = styled.div`
   position: relative;
+  @media screen and (min-width: 1000px) {
+  }
 `;
 
 const HeroTitle = styled.h1`
@@ -60,21 +78,20 @@ const HeroTitle = styled.h1`
   @media (min-width: 400px) and (max-width: 499px) {
     font-size: 32px;
   }
-`;
-
-const HeroSubtitle = styled.div`
-  transform: rotate(-10deg);
-  font-size: 18px;
-
-  border-radius: 5px;
-  color: ${Colors.darkgreen};
-  border: 1px solid ${Colors.darkgreen};
-  display: inline-block;
-  padding: 0.5rem;
-  p {
-    margin: 0;
+  @media screen and (min-width: 600px) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: 800px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
   }
 `;
+
 const HeroWriteup = styled.p`
   font-size: 18px;
 
@@ -89,6 +106,18 @@ const HeroWriteup = styled.p`
   }
   @media (min-width: 400px) and (max-width: 499px) {
     font-size: 16px;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 19px;
+  }
+  @media screen and (min-width: 800px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
   }
 `;
 const HeroButton = styled(Link)`
@@ -122,7 +151,6 @@ const HeroButton2 = styled(Link)`
   }
 `;
 const Image = styled.div`
-  /* margin-left: 2rem; */
   @media screen and (max-width: 320px) {
     padding: 0 0.5rem 0rem 0.5rem;
   }
@@ -133,25 +161,73 @@ const Image = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 0 1rem 0rem 1rem;
   }
-  /* border-radius: 20px 0 0 20px; */
+  @media screen and (min-width: 600px) {
+    padding: 0 2rem 0rem 2rem;
+  }
+  @media screen and (min-width: 800px) {
+    padding: 0 4rem 0rem 4rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 0rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 4rem 0rem 4rem;
+  }
+
   padding: 0 2rem 0rem 2rem;
-  /* padding: 20px 20px 20px 100px; */
+
   img {
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 20px 20px 20px;
     max-width: 100%;
     margin-top: -5rem;
+
+    @media screen and (min-width: 1000px) {
+      border-radius: 0;
+      object-fit: cover;
+      /* margin-top: 5rem; */
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin-left: -5rem;
+    }
+  }
+`;
+const HeroBig = styled.div`
+  img {
+    max-width: 100%;
+  }
+  display: none;
+  @media screen and (min-width: 1000px) {
+    flex: 1;
+    display: block;
   }
 `;
 const Seperate = styled.div`
+  @media screen and (min-width: 1000px) {
+    display: none;
+
+    /* height: 400px; */
+  }
   border-radius: 30px 30px 0 0;
   box-shadow:
     rgba(0, 0, 0, 0.7) 0px 1px 3px,
     rgba(0, 0, 0, 0.5) 0px 0px 0px;
-  margin-top: 6rem;
+  margin-top: 5rem;
 `;
 const Cta = styled.div`
   display: flex;
   flex-direction: column;
+`;
+const Show = styled.div`
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+`;
+const Hide = styled.div`
+  display: none;
+  @media screen and (min-width: 1000px) {
+    display: block;
+  }
 `;
 const Hero = () => (
   <HeroContainer>
@@ -178,10 +254,19 @@ const Hero = () => (
           <Image>
             <img src={heroimg} />
           </Image>
-          <HeroMoving />
+          <Show>
+            {" "}
+            <HeroMoving />{" "}
+          </Show>
         </Seperate>
+        <HeroBig>
+          <img src={heroB} />
+        </HeroBig>
       </HeroContent>
     </HeroBg>
+    <Hide>
+      <HeroMoving />
+    </Hide>
   </HeroContainer>
 );
 
