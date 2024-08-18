@@ -128,7 +128,6 @@ const VideoGallery = () => {
 
   return (
     <Container>
-      <Heading>Men At Work</Heading>
       <SubHeading>Click to Watch Videos.</SubHeading>
       <GalleryWrapper>
         {/* First image taking full screen */}
