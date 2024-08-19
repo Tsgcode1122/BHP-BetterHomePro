@@ -43,7 +43,7 @@ const MiniContact = () => {
           <ContactItem>
             <FacebookOutlined />
             <a
-              href="https://www.facebook.com/ Better Home Pros"
+              href="https://www.facebook.com/share/YpFgnHscrGzgyn9H/?mibextid=LQQJ4d"
               target="_blank"
               rel="noopener noreferrer"
             >
