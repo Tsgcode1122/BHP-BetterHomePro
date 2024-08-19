@@ -3,6 +3,13 @@ import styled from "styled-components";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import heroimg from "../Images/newIm.jpg";
 import Button from "../FixedComponent/Button";
+import {
+  MailOutlined,
+  PhoneOutlined,
+  EnvironmentOutlined,
+  InstagramOutlined,
+  FacebookOutlined,
+} from "@ant-design/icons";
 
 import DownToUp from "../Motion/DownToUp";
 import { Link } from "react-router-dom";
@@ -23,7 +30,42 @@ const AboutContent = () => {
             solutions to meet your needs and exceed expectations.
           </p>
         </DownToUp>
+
         <StyledButton to="/appointment">Book a Service </StyledButton>
+        <>
+          <Content>
+            <ContactItem>
+              <PhoneOutlined />
+              <a href="tel:+13072224021">307-222-4021</a>
+            </ContactItem>
+            <ContactItem>
+              <InstagramOutlined />
+              <a
+                href="https://www.instagram.com/BetterHome_pros"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                BetterHome_pros
+              </a>
+            </ContactItem>
+            <ContactItem>
+              <MailOutlined />
+              <a href="mailto:contact@thebetterhomepros.com">
+                contact@thebetterhomepros.com
+              </a>
+            </ContactItem>
+            <ContactItem>
+              <FacebookOutlined />
+              <a
+                href="https://www.facebook.com/ Better Home Pros"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Better Home Pros
+              </a>
+            </ContactItem>
+          </Content>
+        </>
       </Contain>
       <Group>
         <Ceo />
@@ -31,7 +73,50 @@ const AboutContent = () => {
     </Container>
   );
 };
+const Content = styled.div`
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 10px;
+  background: #cbd8b9;
+  margin: 0 2rem;
+  @media screen and (min-width: 600px) {
+    margin: 0 4rem;
+  }
+  @media screen and (min-width: 800px) {
+    gap: 5px;
+    margin: 0 6rem;
+  }
+  @media screen and (min-width: 1000px) {
+    margin: 0 1rem;
+    gap: 10px;
+  }
+`;
+const ContactItem = styled.div`
+  display: flex;
+  background: ${Colors.lightgreen};
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 20px;
 
+  font-size: 1rem;
+  color: ${Colors.coolBlack};
+  @media screen and (min-width: 800px) {
+    gap: 2px;
+  }
+  &:hover {
+    background: #cbd8b9;
+  }
+  a {
+    color: ${Colors.coolBlack};
+    text-decoration: none;
+  }
+`;
 const StyledButton = styled(Link)`
   padding: 10px 20px;
   background-color: ${Colors.darkgreen};

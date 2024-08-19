@@ -136,6 +136,15 @@ const FormContainer = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     margin: -10rem 1rem 1rem 1rem;
   }
+  @media screen and (min-width: 800px) {
+    margin: -10rem 8rem 1rem 8rem;
+  }
+  @media screen and (min-width: 1000px) {
+    margin: -10rem 16rem 1rem 16rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -10rem 24rem 1rem 24rem;
+  }
 `;
 const ButtonS = styled(Button)`
   text-decoration: none;

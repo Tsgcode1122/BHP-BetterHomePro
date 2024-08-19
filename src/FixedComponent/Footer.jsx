@@ -33,65 +33,69 @@ const Footer = () => {
   return (
     <FooterContainer>
       <Content>
-        <LogoContainer>
-          <img src={logo} alt="Company Logo" />
-        </LogoContainer>
+        <Dov>
+          <LogoContainer>
+            <img src={logo} alt="Company Logo" />
+          </LogoContainer>
 
-        <OpenHours>
-          <span>Open Hours:</span> Mon- Sat: 8 am - 8 pm | Sunday: Closed
-        </OpenHours>
-
-        <NewsletterSection>
-          <NewsletterTitle>Newsletter:</NewsletterTitle>
-          <p>
-            Subscribe to our newsletter to get 10% off your first purchase and
-            stay updated with our latest news.
-          </p>
-          <FormContainer
-            name="newsletter"
-            layout="vertical"
-            form={form}
-            onFinish={onFinish}
-          >
-            <Form.Item
-              name="email"
-              rules={[
-                { required: true, message: "Please enter your email" },
-                { type: "email", message: "Please enter a valid email" },
-              ]}
-              style={{ width: "80%" }}
+          <OpenHours>
+            <span>Open Hours:</span> Mon- Sat: 8 am - 8 pm | Sunday: Closed
+          </OpenHours>
+        </Dov>
+        <Dov>
+          <NewsletterSection>
+            <NewsletterTitle>Newsletter:</NewsletterTitle>
+            <p>
+              Subscribe to our newsletter to get 10% off your first purchase and
+              stay updated with our latest news.
+            </p>
+            <FormContainer
+              name="newsletter"
+              layout="vertical"
+              form={form}
+              onFinish={onFinish}
             >
-              <Input
-                placeholder="Enter your email Address"
-                style={{ border: "none" }}
-              />
-            </Form.Item>
-            <Form.Item>
-              <ButtonS type="primary" htmlType="submit" loading={loading}>
-                Submit
-              </ButtonS>
-            </Form.Item>
-          </FormContainer>
-          {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
-        </NewsletterSection>
+              <Form.Item
+                name="email"
+                rules={[
+                  { required: true, message: "Please enter your email" },
+                  { type: "email", message: "Please enter a valid email" },
+                ]}
+                style={{ width: "80%" }}
+              >
+                <Input
+                  placeholder="Enter your email Address"
+                  style={{ border: "none" }}
+                />
+              </Form.Item>
+              <Form.Item>
+                <ButtonS type="primary" htmlType="submit" loading={loading}>
+                  Submit
+                </ButtonS>
+              </Form.Item>
+            </FormContainer>
+            {successMessage && (
+              <SuccessMessage>{successMessage}</SuccessMessage>
+            )}
+          </NewsletterSection>
 
-        <SocialMedia>
-          <SocialIcon href="https://www.facebook.com/BetterHomePros">
-            <FaFacebookF />
-          </SocialIcon>
-          <SocialIcon href="https://www.instagram.com/BetterHome_pros">
-            <FaInstagram />
-          </SocialIcon>
-          <SocialIcon href="mailto:contact@thebetterhomepros.com">
-            <FaEnvelope />
-          </SocialIcon>
-          <SocialIcon href="tel:+13072224021">
-            <FaPhone />
-          </SocialIcon>
-        </SocialMedia>
-
-        <CopyRight>© 2024. All rights reserved.</CopyRight>
+          <SocialMedia>
+            <SocialIcon href="https://www.facebook.com/BetterHomePros">
+              <FaFacebookF />
+            </SocialIcon>
+            <SocialIcon href="https://www.instagram.com/BetterHome_pros">
+              <FaInstagram />
+            </SocialIcon>
+            <SocialIcon href="mailto:contact@thebetterhomepros.com">
+              <FaEnvelope />
+            </SocialIcon>
+            <SocialIcon href="tel:+13072224021">
+              <FaPhone />
+            </SocialIcon>
+          </SocialMedia>
+        </Dov>
       </Content>
+      <CopyRight>© 2024. All rights reserved.</CopyRight>
     </FooterContainer>
   );
 };
@@ -119,6 +123,11 @@ const ButtonS = styled(AntdButton)`
   }
 `;
 
+const Dov = styled.div`
+  @media screen and (min-width: 1000px) {
+    flex: 1;
+  }
+`;
 const SuccessMessage = styled.div`
   margin-top: 10px;
   color: ${Colors.green};
@@ -140,6 +149,9 @@ const FooterContainer = styled.footer`
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 1rem;
   }
+  @media screen and (min-width: 1000px) {
+    padding: 1rem 4rem;
+  }
 `;
 
 const Content = styled.div`
@@ -147,6 +159,10 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -157,6 +173,9 @@ const LogoContainer = styled.div`
       rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
     max-width: 150px;
+    @media screen and (min-width: 1000px) {
+      max-width: 250px;
+    }
   }
 `;
 

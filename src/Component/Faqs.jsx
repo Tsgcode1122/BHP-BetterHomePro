@@ -81,6 +81,7 @@ export default Faqs;
 
 const FaqsContainer = styled.div`
   position: relative;
+
   box-shadow:
     rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -103,6 +104,18 @@ const FaqsContainer = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     border-radius: 40px;
     margin: 1.5rem;
+  }
+  @media screen and (min-width: 800px) {
+    margin: 2rem 4rem;
+  }
+  @media screen and (min-width: 1000px) {
+    margin: 2rem 6rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 2rem 16rem;
+  }
+  @media screen and (min-width: 1480px) {
+    margin: 2rem 18rem;
   }
 `;
 

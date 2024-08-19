@@ -16,30 +16,16 @@ const ContactContent = () => {
   const googleMapsLink =
     "https://www.google.com/maps/search/?api=1&query=1418+Manoa+Rd,+Wynnewood,+PA+19096";
   return (
-    <>
+    <ContactContainer>
       <MiniContact />
       <ContactUs />
-    </>
+    </ContactContainer>
   );
 };
 
 export default ContactContent;
 
-const ContactContainer = styled.div`
-  padding: 0 2rem !important;
-  margin: 0;
-  align-items: center;
-  border-radius: 8px;
-  @media screen and (max-width: 320px) {
-    padding: 0 1rem !important;
-  }
-  @media (min-width: 321px) and (max-width: 399px) {
-    padding: 0 1.3rem !important;
-  }
-  @media (min-width: 400px) and (max-width: 499px) {
-    padding: 0 1.5rem !important;
-  }
-`;
+const ContactContainer = styled.div``;
 const SubHead = styled.h5`
   font-size: 1.2rem;
   color: #070b0d;

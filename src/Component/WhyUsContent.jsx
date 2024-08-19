@@ -73,10 +73,14 @@ const WhyUsContainer = styled.div`
   padding: 10px 10px 30px 10px;
   margin: 50px 20px;
   text-align: center;
+  @media screen and (min-width: 800px) {
+    margin: 50px 4rem;
+  }
   @media screen and (min-width: 1000px) {
-    padding: 15rem 2rem 2rem 2rem;
-    margin-top: -15rem;
-    z-index: 1;
+    margin: 50px 6rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 50px 10rem;
   }
 `;
 
@@ -105,6 +109,9 @@ const ContentWrapper = styled.div`
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
   position: relative;
+  @media screen and (min-width: 700px) {
+    padding: 10px 10px 10px 10px;
+  }
 `;
 const Join = styled.div`
   display: flex;
@@ -123,6 +130,10 @@ const ReasonCard = styled.div`
 
   @media (max-width: 768px) {
     max-width: 100%;
+  }
+  @media screen and (min-width: 700px) {
+    padding: 0 10px 10px 10px;
+    max-width: calc(46% - 20px);
   }
 `;
 

@@ -58,20 +58,28 @@ export default BeforeAndAfter;
 
 const BeforeAfterContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   gap: 20px;
-  margin-top: 2rem;
+  align-items: center;
+  padding: 2rem 0rem !important;
+
+  @media screen and (min-width: 700px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 2rem !important;
+  }
 `;
 
 const BeforeAfterWrapper = styled.div`
   position: relative;
-  max-width: 500px;
-  margin-bottom: 10px;
+
+  @media screen and (min-width: 700px) {
+  }
 `;
 const Image = styled.img`
-  max-height: 30rem;
-  width: 27rem;
+  max-width: 100%;
+  width: 25rem;
+  height: 22rem;
   @media screen and (max-width: 320px) {
     width: 18rem;
     height: 18rem;
@@ -83,6 +91,10 @@ const Image = styled.img`
   @media (min-width: 400px) and (max-width: 499px) {
     width: 22rem;
     height: 22rem;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 25rem;
+    height: 20rem;
   }
 `;
 

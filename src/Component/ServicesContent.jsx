@@ -6,10 +6,19 @@ import heroimg from "../Images/t2.jpg";
 import heroimg3 from "../Images/t4.jpg";
 import heroimg4 from "../Images/t8.jpg";
 import heroimg5 from "../Images/t6.jpg";
+import heroimg6 from "../Images/t9.jpg";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import { Link } from "react-router-dom";
 import DownToUp from "../Motion/DownToUp";
+const ContactList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 !important;
 
+  li {
+    margin: 5px 0;
+  }
+`;
 const services = [
   {
     id: 1,
@@ -38,7 +47,6 @@ const services = [
       "Our thorough air duct cleaning services remove dust, allergens, and contaminants from your home's ventilation system, improving indoor air quality.",
     viewMoreUrl: "/services/air-duct-cleaning",
   },
-
   {
     id: 4,
     imgUrl: heroimg4,
@@ -57,12 +65,41 @@ const services = [
       "From minor upgrades to major renovations, our home improvement services enhance the beauty, functionality, and value of your home.",
     viewMoreUrl: "/services/home-improvement",
   },
+  {
+    id: 6,
+    imgUrl: heroimg6,
+    heading: "Ready To Book Appointment?",
+    subheading: "You can Reach us now",
+    content: (
+      <>
+        <ContactList>
+          <li>
+            <strong>Instagram:</strong> BetterHome_pros
+          </li>
+          <li>
+            {" "}
+            <strong>Email:</strong> Contact@thebetterhomepros.com
+          </li>
+          <li>
+            {" "}
+            <strong>Call:</strong> (307) 222-4021
+          </li>
+          <li>
+            {" "}
+            <strong>Facebook:</strong> Better Home Pros
+          </li>
+        </ContactList>
+      </>
+    ),
+    viewMoreUrl: "/appointment",
+  },
 ];
+
 const ServicesContent = () => {
   return (
     <ServicesContainer>
       {services.map((service, index) => (
-        <ServiceCard key={index}>
+        <ServiceCard key={index} id={service.id}>
           <DownToUp>
             <ImageWrapper>
               <ServiceImage imgUrl={service.imgUrl} />
@@ -71,7 +108,13 @@ const ServicesContent = () => {
               <Heading>{service.heading}</Heading>
               <Subheading>{service.subheading}</Subheading>
               <Content>{service.content}</Content>
-              <ViewMore to={`/services/${service.id}`}>View More</ViewMore>
+              <ViewMore
+                to={
+                  service.id === 6 ? "/appointment" : `/services/${service.id}`
+                }
+              >
+                {service.id === 6 ? "Book Now" : "View More"}
+              </ViewMore>
             </ContentWrapper>
           </DownToUp>
         </ServiceCard>
@@ -179,7 +222,7 @@ const Subheading = styled.p`
   margin: 10px;
 `;
 
-const Content = styled.p`
+const Content = styled.div`
   font-size: 0.9rem;
   margin-bottom: 15px;
   line-height: 1.4;

@@ -93,7 +93,7 @@ const GalleryContainer = styled.div`
     padding: 20px 6rem;
   }
   @media screen and (min-width: 1200px) {
-    padding: 20px 8rem;
+    padding: 20px 10rem;
   }
   @media (min-width: 1024px) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

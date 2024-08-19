@@ -28,9 +28,7 @@ const QuickContact = () => {
       padding: 10px 6rem;
     }
     @media screen and (min-width: 1000px) {
-      padding: 10px 8rem;
-      max-width: 800px;
-      z-index: 4;
+      display: none;
     }
     @media screen and (min-width: 1200px) {
       padding: 10px 10rem;

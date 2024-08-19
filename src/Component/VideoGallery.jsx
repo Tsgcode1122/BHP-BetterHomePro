@@ -27,6 +27,15 @@ const GalleryWrapper = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 10px;
   }
+  @media screen and (min-width: 800px) {
+    padding: 5px 2rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 5px 5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 5px 10rem;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -35,11 +44,14 @@ const ImageWrapper = styled.div`
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
-
+  @media screen and (min-width: 800px) {
+    width: calc(50% - 20px);
+    border-radius: 20px;
+  }
   img {
     max-width: 100%;
-    width: auto;
-    height: auto;
+    /* width: auto; */
+    /* height: auto; */
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
   }
@@ -109,7 +121,7 @@ const Container = styled.div`
 // Example Cloudinary video links
 const videos = [
   "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723984777/RPReplay_Final1723980643_dfuwxe.mov",
-  "https://res.cloudinary.com/demo/video/upload/w_800,c_limit,ar_16:9/vc_auto/sample2.mp4",
+  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1724036110/RPReplay_Final1724034988_reizpx.mov",
   "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723986786/RPReplay_Final1723980761_z8lucn.mov",
   "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723984777/RPReplay_Final1723980643_dfuwxe.mov",
 ];
