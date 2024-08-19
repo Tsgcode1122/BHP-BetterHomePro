@@ -151,8 +151,17 @@ const ServicesContainer = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 10px 20px;
+  @media screen and (max-width: 320px) {
+    padding: 10px 20px;
+  }
 
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 10px 1rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 10px 2rem;
+  }
   @media screen and (min-width: 800px) {
     padding: 10px 2rem;
   }

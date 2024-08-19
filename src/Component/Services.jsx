@@ -14,6 +14,6 @@ const Services = () => {
 };
 const Container = styled.div`
   border-radius: 20px 20px 0 0;
-  margin: 1rem;
+  margin: 0.1rem;
 `;
 export default Services;
