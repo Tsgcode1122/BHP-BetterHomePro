@@ -84,6 +84,9 @@ const Content = styled.div`
   padding: 10px;
   background: #cbd8b9;
   margin: 0 2rem;
+  @media screen and (max-width: 320px) {
+    margin: 0 1rem;
+  }
   @media screen and (min-width: 600px) {
     margin: 0 4rem;
   }
@@ -106,6 +109,9 @@ const ContactItem = styled.div`
 
   font-size: 1rem;
   color: ${Colors.coolBlack};
+  @media screen and (max-width: 320px) {
+    gap: 5px;
+  }
   @media screen and (min-width: 800px) {
     gap: 2px;
   }

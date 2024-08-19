@@ -48,6 +48,9 @@ const Container = styled.div`
   justify-content: center;
   padding: 2rem;
   background-color: #f5f5f5;
+  @media screen and (max-width: 320px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Section = styled.div`
@@ -56,12 +59,16 @@ const Section = styled.div`
   flex-direction: column;
   margin: 1rem;
   padding: 1rem;
+
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
 
+  @media screen and (max-width: 320px) {
+    max-width: 400px;
+  }
   @media screen and (min-width: 800px) {
     flex: 1 1 (50% - 2rem);
     max-width: 300px;
