@@ -173,6 +173,8 @@ const ServiceCard = styled.div`
   overflow: hidden;
   transition: transform 0.3s ease;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     transform: translateY(-5px);
@@ -200,10 +202,39 @@ const ImageWrapper = styled.div`
   img {
     width: 100%;
     border-radius: 20px;
-    min-height: 230px;
-    max-height: 230px;
+    min-height: 250px;
+    max-height: 250px;
     height: auto;
     border-bottom: 1px solid #ddd;
+    @media screen and (max-width: 320px) {
+      min-height: 230px;
+      max-height: 230px;
+    }
+
+    @media (min-width: 321px) and (max-width: 399px) {
+      min-height: 170px;
+      max-height: 170px;
+    }
+    @media (min-width: 400px) and (max-width: 499px) {
+      min-height: 180px;
+      max-height: 180px;
+    }
+    @media screen and (min-width: 600px) {
+      min-height: 200px;
+      max-height: 200px;
+    }
+    @media screen and (min-width: 800px) {
+      min-height: 230px;
+      max-height: 230px;
+    }
+    @media screen and (min-width: 1000px) {
+      min-height: 230px;
+      max-height: 230px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-height: 230px;
+      max-height: 230px;
+    }
   }
 `;
 

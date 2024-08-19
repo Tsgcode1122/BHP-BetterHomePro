@@ -12,6 +12,12 @@ import a4b from "../Images/a4.jpg";
 
 const images = [
   {
+    before: a4,
+    after: a4b,
+    beforeText: "Before HVAC Cleaning",
+    afterText: "After HVAC Cleaning",
+  },
+  {
     before: a2,
     after: a2b,
     beforeText: "Before Carpet Cleaning",
@@ -26,12 +32,6 @@ const images = [
   {
     before: a1,
     after: a1b,
-    beforeText: "Before HVAC Cleaning",
-    afterText: "After HVAC Cleaning",
-  },
-  {
-    before: a4,
-    after: a4b,
     beforeText: "Before HVAC Cleaning",
     afterText: "After HVAC Cleaning",
   },
