@@ -92,10 +92,82 @@ const Navbar = () => {
       </Sidebar>
 
       {isSidebarOpen && <Overlay onClick={closeSidebar} />}
+
+      <BigNav>
+        <BigCon>
+          <Link to="/">
+            <img src={logo} />
+          </Link>
+
+          <LinkBig>
+            <LinkC to="/">
+              <span>Home</span>
+            </LinkC>
+            <LinkC to="/about">
+              <span>About Us</span>
+            </LinkC>
+            <LinkC to="/services">
+              <span>Services</span>
+            </LinkC>
+            <LinkC to="/contact">
+              <span>Contact Us</span>
+            </LinkC>
+            <LinkC to="/appointment">
+              <span>Book a Service</span>
+            </LinkC>
+            <LinkC to="/gallery">
+              <span>Gallery</span>
+            </LinkC>
+          </LinkBig>
+        </BigCon>
+      </BigNav>
     </>
   );
 };
-
+const BigNav = styled.div`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: none;
+  @media screen and (min-width: 820px) {
+    display: block;
+  }
+  z-index: 999 !important;
+  background-color: black;
+  img {
+    max-width: 100%;
+    height: 50px;
+  }
+`;
+const BigCon = styled.div`
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 800px) {
+    padding: 10px 50px;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 10px 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 10px 140px;
+  }
+`;
+const LinkBig = styled.div`
+  background-color: #e5efdc;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 20px;
+  justify-content: space-between;
+`;
+const LinkC = styled(Link)`
+  display: flex;
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+`;
 const LinkCont = styled(Link)`
   display: flex;
   justify-content: space-between;
@@ -128,6 +200,9 @@ const StyledNavbar = styled.div`
   img {
     max-width: 100%;
     height: 40px;
+  }
+  @media screen and (min-width: 820px) {
+    display: none;
   }
 `;
 

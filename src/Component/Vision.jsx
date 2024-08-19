@@ -44,8 +44,8 @@ const Vision = () => {
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 2rem;
   background-color: #f5f5f5;
 `;
@@ -54,19 +54,30 @@ const Section = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 1rem;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
+
+  @media screen and (min-width: 800px) {
+    flex: 1 1 (50% - 2rem);
+    max-width: 300px;
+  }
+  @media screen and (min-width: 1000px) {
+    max-width: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 400px;
+  }
 `;
 
 const IconContainer = styled.div`
   font-size: 2rem;
   color: ${Colors.green};
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 `;
 
 const Title = styled.h3`
@@ -74,6 +85,7 @@ const Title = styled.h3`
   margin: 0;
   padding-bottom: 10px;
   color: ${Colors.forest};
+
   @media screen and (max-width: 320px) {
     font-size: 1.2rem;
   }

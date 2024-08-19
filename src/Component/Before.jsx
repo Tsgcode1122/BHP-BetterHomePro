@@ -4,6 +4,8 @@ import BeforeAndAfter from "./BeforeAndAfter";
 import styled from "styled-components";
 
 import { Colors } from "../Colors/ColorComponent";
+import WaterDropletsBackground from "../Motion/WaterDropletsBackground";
+// import SideTop from "../FixedComponent/SideTop";
 const SubHeading = styled.p`
   font-size: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -28,14 +30,36 @@ const SubHeading = styled.p`
     padding: 10px;
   }
 `;
+const SideTop = styled.div`
+  @media screen and (min-width: 1200px) {
+    height: 200px;
+    top: 7rem;
+    /* padding: 8rem; */
+    /* right: 10rem; */
+    content: "";
+    border-radius: 60px;
+    position: absolute;
+    width: 100%;
+    max-width: 900px;
+    background-color: #e5efdc;
+  }
+`;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
+  background-color: #e5efdc;
+  @media screen and (min-width: 1200px) {
+    margin: 0 10rem;
+    border-radius: 6rem;
+  }
 `;
 const Before = () => {
   return (
     <Container>
+      {/* <SideTop /> */}
+      <WaterDropletsBackground />
       <Heading>Transformation</Heading>
       <SubHeading>Slide to reveal Before and After.</SubHeading>
       <BeforeAndAfter />
