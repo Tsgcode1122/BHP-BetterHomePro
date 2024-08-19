@@ -58,5 +58,16 @@ const SubText = styled.div`
   font-size: 16px;
   text-align: center;
   z-index: 3;
+  @media screen and (min-width: 800px) {
+    padding: 0 4rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 0 12rem;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 16rem;
+    font-size: 20px;
+  }
 `;
 export default PageHeading;

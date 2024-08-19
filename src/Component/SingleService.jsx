@@ -92,6 +92,15 @@ const ServiceName = styled.div`
 const ServiceContent = styled.div`
   padding: 20px;
   border-radius: 8px;
+  @media screen and (min-width: 800px) {
+    padding: 0 2rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 0 6rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 10rem;
+  }
 `;
 
 const ServiceDescription = styled.div`
@@ -147,6 +156,9 @@ const Button2 = styled(Link)`
 const ImageContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr 1fr));
+  }
 `;
 const ServiceBenefits = styled.div`
   margin-bottom: 20px;
@@ -159,6 +171,12 @@ const ServiceBenefits = styled.div`
   ul {
     list-style: none;
     padding: 0;
+    display: grid;
+    @media screen and (min-width: 800px) {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 `;
 

@@ -7,7 +7,7 @@ import {
   InstagramOutlined,
   FacebookOutlined,
 } from "@ant-design/icons";
-
+import SideBox from "../FixedComponent/SideBox";
 import ColorComponent, { Colors } from "../Colors/ColorComponent";
 import ContactUs from "./ContactUs";
 import MiniContact from "./MiniContact";
@@ -19,13 +19,16 @@ const ContactContent = () => {
     <ContactContainer>
       <MiniContact />
       <ContactUs />
+      <SideBox />
     </ContactContainer>
   );
 };
 
 export default ContactContent;
 
-const ContactContainer = styled.div``;
+const ContactContainer = styled.div`
+  position: relative;
+`;
 const SubHead = styled.h5`
   font-size: 1.2rem;
   color: #070b0d;

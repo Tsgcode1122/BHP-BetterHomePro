@@ -26,7 +26,7 @@ const ZoomInComponent = ({ children }) => {
   const variants = {
     hidden: {
       opacity: 0.8,
-      scale: 0.9,
+      scale: 0.8,
     },
     visible: {
       opacity: 1,
@@ -35,7 +35,7 @@ const ZoomInComponent = ({ children }) => {
         type: "spring",
         stiffness: 60,
         damping: 10,
-        duration: 4.5,
+        duration: 10.5,
       },
     },
   };
