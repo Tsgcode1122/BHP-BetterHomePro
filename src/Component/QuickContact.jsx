@@ -19,6 +19,22 @@ const QuickContact = () => {
     @media screen and (max-width: 320px) {
       padding: 0rem;
     }
+
+    @media screen and (min-width: 600px) {
+      padding: 10px 2rem;
+    }
+
+    @media screen and (min-width: 800px) {
+      padding: 10px 6rem;
+    }
+    @media screen and (min-width: 1000px) {
+      padding: 10px 8rem;
+      max-width: 800px;
+      z-index: 4;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 10px 10rem;
+    }
   `;
 
   const Content = styled.div`
@@ -28,6 +44,10 @@ const QuickContact = () => {
       border-radius: 20px;
       @media screen and (max-width: 320px) {
         border-radius: 0px;
+      }
+      @media screen and (min-width: 1000px) {
+        height: fit-content;
+        border-radius: 40px;
       }
     }
   `;
@@ -40,6 +60,7 @@ const QuickContact = () => {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 1rem;
     border-radius: 10px;
+
     @media screen and (max-width: 320px) {
       right: 0.4rem;
     }

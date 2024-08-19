@@ -41,22 +41,23 @@ const WhyUsContent = () => {
         <VideoBackground>
           <img src={videoBg} autoPlay loop muted playsInline />
         </VideoBackground>
+        <Strong>
+          <Heading>Why Us</Heading>
 
-        <Heading>Why Us</Heading>
-
-        <ContentWrapper>
-          {reasons.map((reason, index) => (
-            <ReasonCard key={index} isLast={index === reasons.length - 1}>
-              <Join>
-                {/* <IconWrapper>{reason.icon}</IconWrapper> */}
-                <ReasonTitle>{reason.title}</ReasonTitle>
-              </Join>
-              <DownToUp>
-                <ReasonContent>{reason.content}</ReasonContent>
-              </DownToUp>
-            </ReasonCard>
-          ))}
-        </ContentWrapper>
+          <ContentWrapper>
+            {reasons.map((reason, index) => (
+              <ReasonCard key={index} isLast={index === reasons.length - 1}>
+                <Join>
+                  {/* <IconWrapper>{reason.icon}</IconWrapper> */}
+                  <ReasonTitle>{reason.title}</ReasonTitle>
+                </Join>
+                <DownToUp>
+                  <ReasonContent>{reason.content}</ReasonContent>
+                </DownToUp>
+              </ReasonCard>
+            ))}
+          </ContentWrapper>
+        </Strong>
         {/* <ViewMore>View More</ViewMore> */}
       </WhyUsContainer>
     </>
@@ -72,6 +73,11 @@ const WhyUsContainer = styled.div`
   padding: 10px 10px 30px 10px;
   margin: 50px 20px;
   text-align: center;
+  @media screen and (min-width: 1000px) {
+    padding: 15rem 2rem 2rem 2rem;
+    margin-top: -15rem;
+    z-index: 1;
+  }
 `;
 
 const VideoBackground = styled.div`
@@ -85,7 +91,7 @@ const VideoBackground = styled.div`
   img {
     width: 100%;
     height: 100%;
-    /* filter: blur(4px); */
+    /* filter: blur(3px); */
     object-fit: cover;
   }
 `;
@@ -120,12 +126,7 @@ const ReasonCard = styled.div`
   }
 `;
 
-const IconWrapper = styled.div`
-  svg {
-    padding: 0;
-    margin: 0 !important;
-  }
-`;
+const Strong = styled.div``;
 
 const ReasonTitle = styled.h3`
   font-size: 1.2rem;

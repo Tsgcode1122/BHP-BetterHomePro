@@ -58,7 +58,6 @@ const services = [
     viewMoreUrl: "/services/home-improvement",
   },
 ];
-
 const ServicesContent = () => {
   return (
     <ServicesContainer>
@@ -81,7 +80,6 @@ const ServicesContent = () => {
   );
 };
 
-// Component to handle image loading with skeleton
 const ServiceImage = ({ imgUrl }) => {
   const [loading, setLoading] = useState(true);
 
@@ -107,30 +105,19 @@ export default ServicesContent;
 const ServicesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
   margin-top: 20px;
   padding: 10px;
-  @media screen and (max-width: 320px) {
-    padding: 5px;
-  }
-  @media (min-width: 321px) and (max-width: 399px) {
-    padding: 9px;
-    gap: 40px;
-    margin-top: 30px;
-  }
-  @media (min-width: 400px) and (max-width: 499px) {
-    padding: 5px;
-    gap: 40px;
-    margin-top: 30px;
-  }
-  @media screen and (min-width: 600px) {
-  }
+
   @media screen and (min-width: 800px) {
+    padding: 10px 2rem;
   }
   @media screen and (min-width: 1000px) {
+    padding: 10px 2rem;
   }
   @media screen and (min-width: 1200px) {
+    padding: 10px 6rem;
   }
 `;
 
@@ -140,31 +127,33 @@ const ServiceCard = styled.div`
   background: #e5efdc;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 450px;
-  width: 100%;
   overflow: hidden;
   transition: transform 0.3s ease;
+  width: 100%;
 
   &:hover {
     transform: translateY(-5px);
   }
-  @media screen and (min-width: 600px) {
-    max-width: 500px;
+
+  @media screen and (max-width: 799px) {
+    max-width: 100%;
   }
+
   @media screen and (min-width: 800px) {
-    max-width: 330px;
+    max-width: calc(45% - 2rem);
   }
   @media screen and (min-width: 1000px) {
-    max-width: 400px;
+    max-width: calc(45% - 20px);
   }
   @media screen and (min-width: 1200px) {
-    max-width: 500px;
+    max-width: calc(30% - 20px);
   }
 `;
 
 const ImageWrapper = styled.div`
   border-radius: 20px;
   margin-bottom: 10px;
+
   img {
     width: 100%;
     border-radius: 20px;
@@ -172,18 +161,6 @@ const ImageWrapper = styled.div`
     max-height: 230px;
     height: auto;
     border-bottom: 1px solid #ddd;
-    @media screen and (max-width: 320px) {
-      min-height: 170px;
-      max-height: 180px;
-    }
-    @media (min-width: 321px) and (max-width: 399px) {
-      min-height: 200px;
-      max-height: 230px;
-    }
-    @media (min-width: 400px) and (max-width: 499px) {
-      min-height: 200px;
-      max-height: 230px;
-    }
   }
 `;
 
@@ -213,8 +190,6 @@ const ViewMore = styled(Link)`
   font-weight: bold;
   padding: 10px 20px;
   display: block;
-
-  /* width: 100%; */
   background: ${Gradients.lightToDark};
   color: #fff;
   text-decoration: none;
@@ -224,10 +199,9 @@ const ViewMore = styled(Link)`
     rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   margin-bottom: 20px;
+
   &:hover {
     background-color: ${Colors.green};
-  }
-  &:hover {
     text-decoration: underline;
   }
 `;

@@ -69,7 +69,7 @@ const GalleryContent = () => {
         <ModalImage src={currentImage} alt="Full Image" />
       </Modal>
 
-      <VideoGallery/>
+      <VideoGallery />
     </>
   );
 };
@@ -86,6 +86,15 @@ const GalleryContainer = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
+  @media screen and (min-width: 800px) {
+    padding: 20px 2rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 20px 6rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 20px 8rem;
+  }
   @media (min-width: 1024px) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
