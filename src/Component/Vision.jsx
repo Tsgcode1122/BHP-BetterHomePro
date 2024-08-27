@@ -47,7 +47,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
-  background-color: #f5f5f5;
+
   @media screen and (max-width: 320px) {
     padding: 0.5rem;
   }
@@ -60,7 +60,7 @@ const Section = styled.div`
   margin: 1rem;
   padding: 1rem;
 
-  background-color: #ffffff;
+  background-color: #f2fcf0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -92,7 +92,7 @@ const Title = styled.h3`
   margin: 0;
   padding-bottom: 10px;
   color: ${Colors.forest};
-
+  text-align: center;
   @media screen and (max-width: 320px) {
     font-size: 1.2rem;
   }
