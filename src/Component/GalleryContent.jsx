@@ -17,7 +17,7 @@ import img11 from "../Images/ceo3.jpg";
 import img12 from "../Images/ceo2.jpg";
 import img13 from "../Images/ceo1.jpg";
 import img14 from "../Images/t8.jpg";
-import img15 from "../Images/t9.jpg";
+import img15 from "../Images/card.jpg";
 import img16 from "../Images/t10.jpg";
 import VideoGallery from "./VideoGallery";
 
@@ -36,7 +36,7 @@ const images = [
   img9,
   img13,
   img10,
-  img15,
+
   img16,
   img14,
 ];

@@ -120,7 +120,7 @@ const Join = styled.div`
 `;
 const ReasonCard = styled.div`
   background: ${(props) =>
-    props.isLast ? "#223A00" : "rgba(255, 255, 255, 0.5)"};
+    props.isLast ? "#4F7716" : "rgba(255, 255, 255, 0.5)"};
   color: ${(props) => (props.isLast ? "white" : "inherit")};
   border-radius: 20px;
   padding: 0 20px 20px 20px;

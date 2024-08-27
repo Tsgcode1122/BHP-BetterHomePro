@@ -10,6 +10,7 @@ import Contact from "../Component/Contact";
 import Faqs from "../Component/Faqs";
 import QuickContact from "../Component/QuickContact";
 import Gallery from "../Component/Gallery";
+import Reviews from "../Component/Reviews";
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
       <Services />
       <QuickContact />
       <WhyUs />
+      <Reviews />
       <Before />
 
       <Faqs />

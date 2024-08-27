@@ -59,10 +59,10 @@ const services = [
   {
     id: 5,
     imgUrl: heroimg5,
-    heading: "Home Improvement",
-    subheading: "Transform Your Home with Expert Renovations",
+    heading: "Dryer Vent Cleaning",
+    subheading: "Breathe Easier with a Clean and Safe Dryer Vent",
     content:
-      "From minor upgrades to major renovations, our home improvement services enhance the beauty, functionality, and value of your home.",
+      "Ensure your home's safety and efficiency with our expert dryer vent cleaning. Reduce the risk of fire and improve your dryer's performance with our thorough cleaning service.",
     viewMoreUrl: "/services/home-improvement",
   },
   {

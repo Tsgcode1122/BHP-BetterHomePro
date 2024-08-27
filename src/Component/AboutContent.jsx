@@ -114,7 +114,7 @@ const ContactItem = styled.div`
     gap: 5px;
   }
   @media screen and (min-width: 800px) {
-    gap: 2px;
+    gap: 10px;
   }
   &:hover {
     background: #cbd8b9;

@@ -26,7 +26,6 @@ const Contact = () => {
         intro="Get in Touch: We're here to assist you with any inquiries or requests. Reach out to us for personalized support and prompt responses to ensure your needs are met."
       />
       <Container>
-        <WaterDropletsBackground />
         <h3>Get An Instant Quote Now!</h3>
         <Content>
           <ContactItem>
@@ -84,7 +83,7 @@ const Content = styled.div`
   display: flex;
   position: relative;
   align-items: center;
-  gap: 20px;
+  gap: 6px;
   justify-content: center;
   flex-wrap: wrap;
 `;

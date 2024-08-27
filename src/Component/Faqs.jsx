@@ -5,7 +5,7 @@ import { color, motion } from "framer-motion";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Colors } from "../Colors/ColorComponent";
 import Heading from "../FixedComponent/Heading";
-
+import faq from "../Images/faqs.png";
 const Faqs = () => {
   const [selectedFaq, setSelectedFaq] = useState(null);
 
@@ -52,26 +52,38 @@ const Faqs = () => {
         <Content>
           <Heading>Faqs</Heading>
           <SubHead>Frequently Asked Questions</SubHead>
-          {faqs.map((faq, index) => (
-            <FaqItem key={index}>
-              <Question onClick={() => toggleFaq(index)}>
-                {faq.question}
-                <IconWrapper>
-                  {selectedFaq === index ? <FaChevronUp /> : <FaChevronDown />}
-                </IconWrapper>
-              </Question>
-              <Answer
-                initial={{ height: 0, opacity: 0 }}
-                animate={{
-                  height: selectedFaq === index ? "auto" : 0,
-                  opacity: selectedFaq === index ? 1 : 0,
-                }}
-                transition={{ duration: 0.3 }}
-              >
-                <p>{faq.answer}</p>
-              </Answer>
-            </FaqItem>
-          ))}
+
+          <Split>
+            <Image>
+              <img src={faq} />
+            </Image>
+            <div>
+              {faqs.map((faq, index) => (
+                <FaqItem key={index}>
+                  <Question onClick={() => toggleFaq(index)}>
+                    {faq.question}
+                    <IconWrapper>
+                      {selectedFaq === index ? (
+                        <FaChevronUp />
+                      ) : (
+                        <FaChevronDown />
+                      )}
+                    </IconWrapper>
+                  </Question>
+                  <Answer
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{
+                      height: selectedFaq === index ? "auto" : 0,
+                      opacity: selectedFaq === index ? 1 : 0,
+                    }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p>{faq.answer}</p>
+                  </Answer>
+                </FaqItem>
+              ))}
+            </div>
+          </Split>
         </Content>
       </FaqsContainer>
     </>
@@ -113,7 +125,7 @@ const FaqsContainer = styled.div`
     margin: 2rem 6rem;
   }
   @media screen and (min-width: 1200px) {
-    margin: 2rem 16rem;
+    margin: 2rem 9rem;
   }
   @media screen and (min-width: 1480px) {
     margin: 2rem 18rem;
@@ -148,6 +160,23 @@ const SubHead = styled.h5`
   margin-bottom: 30px;
 `;
 
+const Split = styled.div`
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+`;
+const Image = styled.div`
+  display: none;
+  @media screen and (min-width: 1000px) {
+    display: block;
+  }
+  img {
+    max-width: 100%;
+  }
+`;
 const FaqItem = styled.div`
   margin-bottom: 1rem;
 `;

@@ -5,6 +5,7 @@ import AboutContent from "../Component/AboutContent";
 import WhyUs from "../Component/WhyUs";
 import Contact from "../Component/Contact";
 import Vision from "../Component/Vision";
+import Reviews from "../Component/Reviews";
 
 const About = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const About = () => {
       <AboutContent />
       <Vision />
       <WhyUs />
+      <Reviews />
       <Contact />
     </>
   );

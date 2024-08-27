@@ -1,6 +1,6 @@
 // ColorComponent.js
 export const Colors = {
-  green: "#476E03",
+  green: "#4F7716",
   lighterGreen: "#E5EFDC",
   lightgreen: "#E5EFDC",
   darkgreen: "#325300",

@@ -51,15 +51,18 @@ const Container = styled.div`
   align-items: center;
   background-color: #e5efdc;
   @media screen and (min-width: 1200px) {
-    margin: 0 10rem;
-    border-radius: 6rem;
+    margin: 0 9rem;
+    box-shadow:
+      rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 3rem;
   }
 `;
 const Before = () => {
   return (
     <Container>
       {/* <SideTop /> */}
-      <WaterDropletsBackground />
+
       <Heading>Transformation</Heading>
       <SubHeading>Slide to reveal Before and After.</SubHeading>
       <BeforeAndAfter />

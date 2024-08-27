@@ -5,7 +5,7 @@ import { Form, Input, Button as AntdButton } from "antd";
 import { FaFacebookF, FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa";
 import { Colors } from "../Colors/ColorComponent";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   const [form] = Form.useForm();
   const [successMessage, setSuccessMessage] = useState("");
@@ -39,46 +39,33 @@ const Footer = () => {
           </LogoContainer>
 
           <OpenHours>
-            <span>Open Hours:</span> Mon- Sat: 8 am - 8 pm | Sunday: Closed
+            <span>Open Hours:</span> Sunday-Friday
           </OpenHours>
         </Dov>
         <Dov>
-          <NewsletterSection>
-            <NewsletterTitle>Newsletter:</NewsletterTitle>
-            <p>
-              Subscribe to our newsletter to get 10% off your first purchase and
-              stay updated with our latest news.
-            </p>
-            <FormContainer
-              name="newsletter"
-              layout="vertical"
-              form={form}
-              onFinish={onFinish}
-            >
-              <Form.Item
-                name="email"
-                rules={[
-                  { required: true, message: "Please enter your email" },
-                  { type: "email", message: "Please enter a valid email" },
-                ]}
-                style={{ width: "80%" }}
-              >
-                <Input
-                  placeholder="Enter your email Address"
-                  style={{ border: "none" }}
-                />
-              </Form.Item>
-              <Form.Item>
-                <ButtonS type="primary" htmlType="submit" loading={loading}>
-                  Submit
-                </ButtonS>
-              </Form.Item>
-            </FormContainer>
-            {successMessage && (
-              <SuccessMessage>{successMessage}</SuccessMessage>
-            )}
-          </NewsletterSection>
-
+          <QuickLink>
+            <p>Quick Links:</p>
+            <LinkBig>
+              <LinkC to="/">
+                <span>Home</span>
+              </LinkC>
+              <LinkC to="/about">
+                <span>About Us</span>
+              </LinkC>
+              <LinkC to="/services">
+                <span>Services</span>
+              </LinkC>
+              <LinkC to="/contact">
+                <span>Contact Us</span>
+              </LinkC>
+              <LinkC to="/appointment">
+                <span>Book a Service</span>
+              </LinkC>
+              <LinkC to="/gallery">
+                <span>Gallery</span>
+              </LinkC>
+            </LinkBig>
+          </QuickLink>
           <SocialMedia>
             <SocialIcon href="https://www.facebook.com/BetterHomePros">
               <FaFacebookF />
@@ -89,7 +76,7 @@ const Footer = () => {
             <SocialIcon href="mailto:contact@thebetterhomepros.com">
               <FaEnvelope />
             </SocialIcon>
-            <SocialIcon href="tel:+13072224021">
+            <SocialIcon href="tel:+13213673509">
               <FaPhone />
             </SocialIcon>
           </SocialMedia>
@@ -102,14 +89,29 @@ const Footer = () => {
 
 export default Footer;
 
-const FormContainer = styled(Form)`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+const QuickLink = styled.div`
+  p {
+    font-weight: bold;
+  }
 `;
+const LinkBig = styled.div`
+  background-color: #e5efdc;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  align-items: center;
+  padding: 0 2rem 0rem 2rem;
 
+  justify-content: center;
+`;
+const LinkC = styled(Link)`
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+`;
 const ButtonS = styled(AntdButton)`
   background: ${Colors.green};
   color: white;
@@ -181,6 +183,7 @@ const LogoContainer = styled.div`
 
 const OpenHours = styled.div`
   font-size: 1rem;
+  padding-top: 10px;
   font-weight: 500;
   span {
     font-weight: bold;

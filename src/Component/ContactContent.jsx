@@ -18,14 +18,31 @@ const ContactContent = () => {
   return (
     <ContactContainer>
       <MiniContact />
-      <ContactUs />
-      <SideBox />
     </ContactContainer>
   );
 };
 
 export default ContactContent;
 
+const ContactItem = styled.div`
+  display: flex;
+  background: ${Colors.lightgreen};
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 5px;
+
+  font-size: 1rem;
+  color: ${Colors.coolBlack};
+
+  &:hover {
+    background: #cbd8b9;
+  }
+  a {
+    color: ${Colors.coolBlack};
+    text-decoration: none;
+  }
+`;
 const ContactContainer = styled.div`
   position: relative;
 `;
@@ -38,38 +55,10 @@ const SubHead = styled.h5`
   font-family: "Philosopher", sans-serif;
   margin-bottom: 30px;
 `;
-const Content = styled.div`
+const Contents = styled.div`
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-`;
-const ContactItem = styled.div`
-  display: flex;
-  align-items: center;
-  background: linear-gradient(
-    -1deg,
-    #0b090a 0%,
-    #f0e8d7 10%,
-    #f4ebd0 20%,
-    #f4ebd0 50%,
-    #f0e8d7 70%,
-    #f4ebd0 90%,
-    #0b090a 100%
-  );
-  padding: 10px 15px;
-  border-radius: 10px;
-  gap: 20px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  color: ${Colors.coolBlack};
-
-  &:hover {
-    background: #f7d782;
-  }
-  a {
-    color: ${Colors.coolBlack};
-    text-decoration: none;
-  }
 `;
