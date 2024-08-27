@@ -69,28 +69,28 @@ const HeroContent = styled.div`
 `;
 
 const HeroTitle = styled.h1`
-  font-size: 28px;
+  font-size: 35px;
   padding: 0;
   @media screen and (max-width: 320px) {
-    font-size: 25px;
+    font-size: 28px;
   }
   @media (min-width: 321px) and (max-width: 399px) {
     font-size: 32px;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    font-size: 32px;
+    font-size: 34px;
   }
   @media screen and (min-width: 600px) {
-    font-size: 36px;
+    font-size: 40px;
   }
   @media screen and (min-width: 800px) {
-    font-size: 48px;
+    font-size: 55px;
   }
   @media screen and (min-width: 1000px) {
-    font-size: 48px;
+    font-size: 55px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 52px;
+    font-size: 60px;
   }
 `;
 

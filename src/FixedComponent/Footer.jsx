@@ -47,22 +47,22 @@ const Footer = () => {
             <p>Quick Links:</p>
             <LinkBig>
               <LinkC to="/">
-                <span>Home</span>
+                <span>Home {""} ||</span>
               </LinkC>
               <LinkC to="/about">
-                <span>About Us</span>
+                <span>About Us {""} ||</span>
               </LinkC>
               <LinkC to="/services">
-                <span>Services</span>
+                <span>Services {""} || </span>
               </LinkC>
               <LinkC to="/contact">
-                <span>Contact Us</span>
+                <span>Contact Us {""} ||</span>
               </LinkC>
               <LinkC to="/appointment">
-                <span>Book a Service</span>
+                <span>Book a Service {""} ||</span>
               </LinkC>
               <LinkC to="/gallery">
-                <span>Gallery</span>
+                <span>Gallery {""} ||</span>
               </LinkC>
             </LinkBig>
           </QuickLink>
@@ -108,9 +108,18 @@ const LinkC = styled(Link)`
   display: flex;
   text-decoration: none;
   color: black;
-  padding-right: 20px;
+  padding-right: 30px;
   padding-bottom: 10px;
   justify-content: space-between;
+  @media screen and (max-width: 320px) {
+    padding-right: 20px;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding-right: 20px;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding-right: 20px;
+  }
 `;
 const ButtonS = styled(AntdButton)`
   background: ${Colors.green};
@@ -161,6 +170,15 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  @media screen and (max-width: 320px) {
+    gap: 0.5rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    gap: 0.5rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    gap: 0.5rem;
+  }
   @media screen and (min-width: 1000px) {
     flex-direction: row;
     align-items: center;
@@ -190,25 +208,11 @@ const OpenHours = styled.div`
   }
 `;
 
-const NewsletterSection = styled.div`
-  width: 100%;
-  max-width: 400px;
-
-  p {
-    margin: 0.5rem 0 1rem;
-    font-size: 0.9rem;
-  }
-`;
-
-const NewsletterTitle = styled.h4`
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-`;
-
 const SocialMedia = styled.div`
   display: flex;
   gap: 1rem;
   justify-content: center;
+  padding-top: 20px;
 `;
 
 const SocialIcon = styled.a`

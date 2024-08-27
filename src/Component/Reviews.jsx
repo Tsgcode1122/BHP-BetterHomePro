@@ -50,29 +50,26 @@ const Headings = styled.h1`
 const SubHeading = styled.p`
   font-size: 0.8rem;
   color: #555;
-  padding: 0 80px;
+  text-align: center;
   margin-bottom: 40px;
   font-weight: 400;
   @media screen and (max-width: 320px) {
     font-size: 0.7rem;
-    padding: 0 60px;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    font-size: 0.7rem;
-    padding: 0 70px;
+    font-size: 1rem;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    font-size: 0.7rem;
-    padding: 0 70px;
+    font-size: 1rem;
   }
   @media screen and (min-width: 800px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   @media screen and (min-width: 800px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -90,11 +87,11 @@ const ReviewCard = styled.div`
     padding: 8px;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    min-width: 250px;
+    min-width: 280px;
     padding: 8px;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    min-width: 250px;
+    min-width: 280px;
     padding: 8px;
   }
 `;
@@ -108,9 +105,12 @@ const ReviewText = styled.p`
   }
   @media (min-width: 321px) and (max-width: 399px) {
     font-size: 0.9rem;
+
+    min-height: 110px;
   }
   @media (min-width: 400px) and (max-width: 499px) {
     font-size: 0.9rem;
+    min-height: 110px;
   }
 `;
 
@@ -224,7 +224,7 @@ const Reviews = () => {
     <Container>
       <Heading>Reviews & Testimonial</Heading>
 
-      <SubHeading>See Why Our Clients Recommend Us</SubHeading>
+      <SubHeading>Feedback from Our Valued Clients</SubHeading>
 
       <SlideDiv>
         {reviews.map((review, index) => (

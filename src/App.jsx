@@ -22,10 +22,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 !important;
     padding: 0 !important;
   background: #f4faf1;
-    font-family: "Playfair Display", serif;
+font-family: 'Aileron', sans-serif;
+
   font-optical-sizing: auto;
-    /* font-family: "Rowdies", sans-serif; */
- /* font-family: "Lora", system-ui; */
+
 
     min-height: 100%;
   }

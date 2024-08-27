@@ -14,7 +14,7 @@ const ScrollToTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${Gradients.lightGoldToGold};
+  background: ${Colors.lightgreen};
   z-index: 999 !important;
   box-shadow: ${Shadows.goldShadow};
 

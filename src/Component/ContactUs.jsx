@@ -240,16 +240,16 @@ const Container = styled.div`
   margin: -25rem 2rem 2rem 2rem;
 
   @media screen and (max-width: 320px) {
-    margin: -13rem 1rem 1rem 1rem;
+    margin: -25rem 1rem 1rem 1rem;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    margin: -13rem 1rem 1rem 1rem;
+    margin: -25rem 1rem 1rem 1rem;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    margin: -13rem 1rem 1rem 1rem;
+    margin: -25rem 1.5rem 1rem 1.5rem;
   }
   @media screen and (min-width: 800px) {
-    margin: -25rem 5rem 3rem 5rem;
+    margin: -25rem 3rem 3rem 3rem;
     display: grid;
     gap: 20px;
     grid-template-columns: 40% 60%;
