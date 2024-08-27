@@ -29,7 +29,7 @@ const HeroBg = styled.div`
   /* background: url(${herobg}) !important; */
   background-size: cover;
   background-position: center;
-  color: ${Colors.forest};
+  color: white;
   text-align: center;
 `;
 const Content = styled.div`
@@ -126,8 +126,9 @@ const HeroWriteup = styled.p`
 `;
 const HeroButton = styled(Link)`
   padding: 10px 20px;
-  background: ${Gradients.lightToDark};
+  background-color: ${Colors.green};
   color: #fff;
+  border: 1px solid #325300;
   text-decoration: none;
   font-size: 18px;
   border-radius: 20px;
@@ -137,6 +138,7 @@ const HeroButton = styled(Link)`
   margin-bottom: 20px;
   &:hover {
     background-color: ${Colors.green};
+    box-shadow: none;
   }
 `;
 const HeroButton2 = styled(Link)`
@@ -145,13 +147,14 @@ const HeroButton2 = styled(Link)`
     rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background-color: ${Colors.lightgreen};
-  color: ${Colors.forest};
+  color: ${Colors.green};
   text-decoration: none;
   font-size: 18px;
   border-radius: 20px;
   margin-bottom: 20px;
   &:hover {
     background-color: ${Colors.green};
+    color: white;
   }
 `;
 const Image = styled.div`
@@ -246,17 +249,15 @@ const Hero = () => (
   <HeroContainer>
     <HeroBg>
       <WaterBubblesBackground />
-      <WaterDropletsBackground />
+
       <HeroContent>
         <Content>
           <ZoomInComponent>
-            <HeroTitle>
-              Top-notch cleaning services for a spotless home
-            </HeroTitle>
+            <HeroTitle>We're Professionals and We're Better</HeroTitle>
           </ZoomInComponent>
           <HeroWriteup>
-            From HVAC and air duct cleaning to chimney repair, carpet cleaning,
-            and home improvement, we ensure your home is in perfect condition.
+            Better Home Pros Offers comprehensive air duct cleaning, chimney
+            sweep & repair, dryer vent cleaning, furnace cleaning & maintenance.
           </HeroWriteup>
           <Cta>
             <HeroButton to="/contact">Get a Free Quote</HeroButton>

@@ -5,8 +5,8 @@ import styled from "styled-components";
 const Bubble = styled.div`
   width: ${({ size }) => size}px;
   height: ${({ size }) => size}px;
-  background: #e5efdc;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #325300;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 
   border-radius: 50%;
   position: absolute;
@@ -15,7 +15,7 @@ const Bubble = styled.div`
   filter: blur(3px);
 
   &:nth-child(even) {
-    background: #e5efdc;
+    background: #325300;
   }
 `;
 

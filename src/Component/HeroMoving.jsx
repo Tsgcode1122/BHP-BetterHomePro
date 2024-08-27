@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import i1 from "../Images/clean.png";
-import i2 from "../Images/air-conditioning.png";
-import i3 from "../Images/chimney.png";
-import i4 from "../Images/power-washing.png";
-import i5 from "../Images/maintenance.png";
+import i1 from "../Images/hvac.png";
+import i2 from "../Images/air-conditioning1.png";
+import i3 from "../Images/chimney1.png";
+import i4 from "../Images/power-washing1.png";
+import i5 from "../Images/lint.png";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 const HeroMoving = () => {
   const items = [
@@ -13,7 +13,7 @@ const HeroMoving = () => {
     { img: i2, text: "Air Duct Cleaning" },
     { img: i3, text: "Chimney Repair" },
     { img: i4, text: "Carpet Cleaning" },
-    { img: i5, text: "Home Improvement" },
+    { img: i5, text: "Dryer Vent Cleaning" },
   ];
 
   const repeatedItems = Array.from({ length: 20 }).flatMap(() => items);
@@ -74,7 +74,7 @@ const Item = styled.div`
     rgba(0, 0, 0, 0.24) 0px 1px 2px;
   background: ${Gradients.greenToDarkGreen} !important;
   border-radius: 20px;
-  color: black;
+  color: white;
   min-width: 100px;
 
   img {

@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { Skeleton } from "antd";
 import heroimg2 from "../Images/t5.jpg";
 import heroimg from "../Images/t2.jpg";
-import heroimg3 from "../Images/t4.jpg";
+import heroimg3 from "../Images/chim.jpg";
 import heroimg4 from "../Images/t8.jpg";
 import heroimg5 from "../Images/t6.jpg";
-import heroimg6 from "../Images/t9.jpg";
+import heroimg6 from "../Images/card.jpg";
 import { Colors, Gradients } from "../Colors/ColorComponent";
 import { Link } from "react-router-dom";
 import DownToUp from "../Motion/DownToUp";
@@ -35,7 +35,7 @@ const services = [
     heading: "HVAC Services",
     subheading: "Efficient and Reliable Heating & Cooling",
     content:
-      "Keep your home comfortable year-round with our professional HVAC services. From installation to maintenance, we ensure your systems run smoothly and efficiently.",
+      "Keep your home comfortable year-round with our professional HVAC maintenance services, we ensure your systems run smoothly and efficiently.",
     viewMoreUrl: "/services/hvac",
   },
   {
@@ -82,7 +82,7 @@ const services = [
           </li>
           <li>
             {" "}
-            <strong>Call:</strong> (307) 222-4021
+            <strong>Call:</strong> 321-367-3509
           </li>
           <li>
             {" "}
@@ -175,7 +175,7 @@ const ServicesContainer = styled.div`
 
 const ServiceCard = styled.div`
   padding: 10px;
-  border: 2px solid ${Colors.green};
+  border: 2px solid ${Colors.darkgreen};
   background: #e5efdc;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -21,13 +21,14 @@ const AboutContent = () => {
       <Contain>
         <DownToUp>
           <p>
-            At The Better Home Pros, we are a family-owned business committed to
-            delivering exceptional service with a personal touch. Our certified
-            technicians are trained in the latest techniques to thoroughly clean
-            your air ducts, ensuring a healthier living environment. We take
-            pride in our work, offering a satisfaction guarantee and a warranty
-            for peace of mind. Whether the job is big or small, we tailor our
-            solutions to meet your needs and exceed expectations.
+            Better Home Pros is a family-owned business dedicated to exceptional
+            customer satisfaction and professionalism. Our certified technicians
+            are trained in the latest techniques to guarantee your home is free
+            of any harmful bacteria and germs, ensuring a healthy environment
+            for you and your loved ones. At Better Home Pros, we take pride in
+            our work. No job is too small or too big. Give us a call today or
+            send us an email and let us get started with you a{" "}
+            <span>Better Home!</span>
           </p>
         </DownToUp>
 
@@ -36,7 +37,7 @@ const AboutContent = () => {
           <Content>
             <ContactItem>
               <PhoneOutlined />
-              <a href="tel:+13072224021">307-222-4021</a>
+              <a href="tel:+13072224021">321-367-3509</a>
             </ContactItem>
             <ContactItem>
               <InstagramOutlined />
@@ -117,6 +118,7 @@ const ContactItem = styled.div`
   }
   &:hover {
     background: #cbd8b9;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   }
   a {
     color: ${Colors.coolBlack};
@@ -125,14 +127,17 @@ const ContactItem = styled.div`
 `;
 const StyledButton = styled(Link)`
   padding: 10px 20px;
-  background-color: ${Colors.darkgreen};
+  background: ${Gradients.greenToDarkGreen};
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   border-radius: 10px;
   margin-bottom: 20px;
   &:hover {
-    background-color: ${Colors.green};
+    background: ${Colors.darkgreen};
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    border: 1px solid ${Colors.lightgreen};
+    transform: scale(1.05);
   }
 `;
 
@@ -168,6 +173,9 @@ const Contain = styled.div`
     line-height: 1.5;
     padding: 1rem;
     margin-bottom: 1rem;
+    span {
+      font-style: italic;
+    }
     @media screen and (min-width: 600px) {
       padding: 0rem 3rem 0 3rem;
     }

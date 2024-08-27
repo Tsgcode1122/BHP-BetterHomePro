@@ -3,7 +3,7 @@ export const Colors = {
   green: "#476E03",
   lighterGreen: "#E5EFDC",
   lightgreen: "#E5EFDC",
-  darkgreen: "#223A00",
+  darkgreen: "#325300",
   blue: "#294EB7",
   darkBlue: "#191947",
   forest: "#0E1514",
@@ -40,8 +40,12 @@ export const Gradients = {
       #0b090a 100%
     )
   `,
-  lightToDark: `linear-gradient(9deg, #223A00 2%, #3c5f0c 20%,  #476E03 66% ,   #223A00 100%)`,
+  lightToDark: `linear-gradient(9deg, #4F7716 2%, #3c5f0c 20%, #4F7716 66% ,   #4F7716 100%)`,
   greenToDarkGreen: `
+ radial-gradient(circle, #325300 13%,#325300 93%, #325300 100%)
+
+  `,
+  greenToDarkGreen2: `
  radial-gradient(circle, #dbe8cf 13%, rgba(226,236,217,1) 93%, rgba(182,208,159,1) 100%)
 
   `,

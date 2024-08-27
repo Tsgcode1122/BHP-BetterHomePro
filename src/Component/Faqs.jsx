@@ -21,12 +21,12 @@ const Faqs = () => {
     {
       question: "What is included in your HVAC services?",
       answer:
-        "Our HVAC services include installation, maintenance, and repair of heating, ventilation, and air conditioning systems. We ensure that your system runs efficiently and effectively.",
+        "Our HVAC services include  maintenance and repair of heating, ventilation, and air conditioning systems. We ensure that your system runs efficiently and effectively.",
     },
     {
-      question: "How often should air ducts be cleaned?",
+      question: "How often should air ducts and dryer vents be cleaned?",
       answer:
-        "Air ducts should be cleaned every 3 to 5 years, depending on usage and air quality. Regular cleaning can help maintain good indoor air quality and system efficiency.",
+        "Air ducts and dryer vents should be cleaned every 1-2 years, depending on usage and other debris, such as animal hair, etc. that can affect the air quality and performance of your system.",
     },
     {
       question: "What is the process for chimney repair?",
@@ -39,9 +39,10 @@ const Faqs = () => {
         "Our carpet cleaning service uses advanced techniques and equipment to remove stains, dirt, and allergens from your carpets. We offer both deep cleaning and maintenance options to keep your carpets looking fresh.",
     },
     {
-      question: "What does home improvement include?",
+      question:
+        " How do I know if my air ducts or dryer vent needs to be cleaned? ",
       answer:
-        "Home improvement encompasses a variety of services such as remodeling, renovations, and upgrades to enhance the functionality and aesthetics of your home. This includes kitchen and bathroom remodels, painting, and more.",
+        "If it takes more than 1 cycle to dry your clothes, this means your dryer vent is clogged and needs to be cleaned immediately. If your house has a lot of dust or you are experiencing allergies, excessive sneezing or coughing, your air ducts have been compromised and require immediate attention. Dirty air ducts can lead to mold and bacteria inside of your system, causing severe health issues.",
     },
   ];
 
