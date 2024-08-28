@@ -147,6 +147,7 @@ const ReasonTitle = styled.h3`
 const ReasonContent = styled.p`
   font-size: 1rem;
   margin: 0;
+  text-align: justify;
 `;
 const ViewMore = styled.a`
   text-decoration: none;

@@ -51,9 +51,9 @@ const services = [
     id: 4,
     imgUrl: heroimg4,
     heading: "Carpet Cleaning",
-    subheading: "Restore Your Carpets to Like-New Condition",
+    subheading: "Restore Your Carpet to Like-New Condition",
     content:
-      "Our deep cleaning methods remove dirt, stains, and odors from your carpets, leaving them fresh, clean, and revitalized, enhancing your home's appearance.",
+      "Our deep cleaning methods remove dirt, stains, and odors from your carpet, leaving them fresh, clean, and revitalized, enhancing your home's appearance.",
     viewMoreUrl: "/services/carpet-cleaning",
   },
   {
@@ -68,7 +68,7 @@ const services = [
   {
     id: 6,
     imgUrl: heroimg6,
-    heading: "Ready To Book Appointment?",
+    heading: "Ready to book an appointment?",
     subheading: "You can Reach us now",
     content: (
       <>
