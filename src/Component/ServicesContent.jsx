@@ -35,7 +35,7 @@ const services = [
     heading: "HVAC Services",
     subheading: "Efficient and Reliable Heating & Cooling",
     content:
-      "Keep your home comfortable year-round with our professional HVAC maintenance services, we ensure your systems run smoothly and efficiently.",
+      "Keep your home comfortable year-round with our professional HVAC maintenance services, we ensure your system run smoothly and efficiently.",
     viewMoreUrl: "/services/hvac",
   },
   {
