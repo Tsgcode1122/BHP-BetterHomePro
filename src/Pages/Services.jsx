@@ -13,9 +13,9 @@ const Services = () => {
       <PageHeading
         backgroundImage={backgroundImage}
         text="Services"
-        intro="Discover Our Services: Explore our range of expert solutions designed to keep your home in top shape. From HVAC to home improvement, we're here to serve your every need."
+        intro="Discover Our Services: Explore our range of expert solutions designed to keep your home in top shape. We're here to serve your every need."
       />
-      ;
+
       <ServicesContent />
       <Contact />
     </>

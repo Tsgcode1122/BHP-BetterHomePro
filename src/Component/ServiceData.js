@@ -11,7 +11,7 @@ import air1 from "../Images/t5.jpg";
 import air2 from "../Images/t7.jpg";
 import air3 from "../Images/air3.jpg";
 import air4 from "../Images/air1.jpg";
-import chim1 from "../Images/t4.jpg";
+import chim1 from "../Images/chim.jpg";
 import chim2 from "../Images/t3.jpg";
 import chim3 from "../Images/t19.jpg";
 import chim4 from "../Images/chim4.jpg";

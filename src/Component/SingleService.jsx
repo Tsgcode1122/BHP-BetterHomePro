@@ -50,8 +50,8 @@ const SingleService = () => {
         <ImageContainer>
           <ServiceImage src={service.serviceImage1} alt={service.serviceName} />
           <ServiceImage src={service.serviceImage2} alt={service.serviceName} />
-          <ServiceImage src={service.serviceImage3} alt={service.serviceName} />
-          <ServiceImage src={service.serviceImage4} alt={service.serviceName} />
+          {/* <ServiceImage src={service.serviceImage3} alt={service.serviceName} />
+          <ServiceImage src={service.serviceImage4} alt={service.serviceName} /> */}
         </ImageContainer>
       </ServiceContent>
     </ServiceWrapper>
