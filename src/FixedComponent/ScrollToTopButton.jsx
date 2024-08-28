@@ -37,7 +37,7 @@ const ScrollToTop = styled.div`
     right: 10px;
   }
   &:hover {
-    background-color: #24d910;
+    background-color: #4f7716;
     transform: scale(1.2);
     animation: none;
   }
