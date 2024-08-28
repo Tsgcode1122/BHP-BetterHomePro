@@ -66,8 +66,8 @@ const BlurOverlay = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
   z-index: 1000;
   display: ${(props) => (props.visible ? "block" : "none")};
 `;
