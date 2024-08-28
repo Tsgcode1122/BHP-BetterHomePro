@@ -256,7 +256,7 @@ const Hero = () => (
             <HeroTitle>We're Professionals and We're Better</HeroTitle>
           </ZoomInComponent>
           <HeroWriteup>
-            Better Home Pros Offers comprehensive air duct cleaning, chimney
+            Better Home Pros offers comprehensive air duct cleaning, chimney
             sweep & repair, dryer vent cleaning, furnace cleaning & maintenance.
           </HeroWriteup>
           <Cta>
