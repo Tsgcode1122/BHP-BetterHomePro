@@ -26,9 +26,8 @@ const AboutContent = () => {
             are trained in the latest techniques to guarantee your home is free
             of any harmful bacteria and germs, ensuring a healthy environment
             for you and your loved ones. At Better Home Pros, we take pride in
-            our work. No job is too small or too big. Give us a call today or
-            send us an email and let us get started with you a{" "}
-            <span>Better Home!</span>
+            our work. No job is too small or too big. Let's get started with a{" "}
+            <span>Better Home</span> for you and your loved ones!
           </p>
         </DownToUp>
 
