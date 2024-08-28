@@ -147,7 +147,17 @@ const ReasonTitle = styled.h3`
 const ReasonContent = styled.p`
   font-size: 1rem;
   margin: 0;
+
   text-align: justify;
+  @media screen and (max-width: 320px) {
+    font-size: 0.9rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    font-size: 1.05rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    font-size: 1.05rem;
+  }
 `;
 const ViewMore = styled.a`
   text-decoration: none;

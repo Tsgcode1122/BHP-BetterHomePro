@@ -14,26 +14,26 @@ const images = [
   {
     before: a4,
     after: a4b,
-    beforeText: "Before HVAC Cleaning",
-    afterText: "After HVAC Cleaning",
+    beforeText: "Before ",
+    afterText: "After ",
   },
   {
     before: a2,
     after: a2b,
-    beforeText: "Before Carpet Cleaning",
-    afterText: "After Carpet Cleaning",
+    beforeText: "Before ",
+    afterText: "After ",
   },
   {
     before: a3,
     after: a3b,
-    beforeText: "Before Chimney Repair",
-    afterText: "After Chimney Repair",
+    beforeText: "Before",
+    afterText: "After ",
   },
   {
     before: a1,
     after: a1b,
-    beforeText: "Before HVAC Cleaning",
-    afterText: "After HVAC Cleaning",
+    beforeText: "Before ",
+    afterText: "After ",
   },
 ];
 
