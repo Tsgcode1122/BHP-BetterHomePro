@@ -101,7 +101,7 @@ const ServicesContent = () => {
       {services.map((service, index) => (
         <ServiceCard key={index} id={service.id}>
           <DownToUp>
-            <ImageWrapper>
+            <ImageWrapper id={service.id}>
               <ServiceImage imgUrl={service.imgUrl} />
             </ImageWrapper>
             <ContentWrapper>
@@ -210,23 +210,25 @@ const ImageWrapper = styled.div`
 
   img {
     width: 100%;
+    height: auto;
     border-radius: 20px;
     min-height: 250px;
     max-height: 250px;
     height: auto;
     border-bottom: 1px solid #ddd;
     @media screen and (max-width: 320px) {
-      min-height: 150px;
-      max-height: 150px;
+      min-height: ${(props) => (props.id % 2 === 0 ? "150px" : "200px")};
+      max-height: ${(props) => (props.id % 2 === 0 ? "150px" : "200px")};
     }
 
     @media (min-width: 321px) and (max-width: 399px) {
-      min-height: 170px;
-      max-height: 170px;
+      min-height: ${(props) => (props.id % 2 === 0 ? "180px" : "250px")};
+      max-height: ${(props) => (props.id % 2 === 0 ? "180px" : "250px")};
     }
+
     @media (min-width: 400px) and (max-width: 499px) {
-      min-height: 180px;
-      max-height: 180px;
+      min-height: ${(props) => (props.id % 2 === 0 ? "180px" : "250px")};
+      max-height: ${(props) => (props.id % 2 === 0 ? "180px" : "250px")};
     }
     @media screen and (min-width: 600px) {
       min-height: 200px;
