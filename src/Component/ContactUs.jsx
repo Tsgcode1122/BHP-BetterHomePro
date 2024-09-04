@@ -60,7 +60,7 @@ const ContactUs = () => {
       setLoading(false);
     }
   };
-
+  const phoneRegex = /^\+?[0-9\s\-()]{7,15}$/;
   return (
     <Container>
       {" "}
@@ -129,6 +129,20 @@ const ContactUs = () => {
           >
             <Input placeholder="Enter your email" />
           </Form.Item>
+          <Form.Item
+            name="number"
+            label="Phone Number"
+            rules={[
+              { required: true, message: "Please enter your phone number" },
+              {
+                pattern: phoneRegex,
+                message: "Please enter a valid phone number",
+              },
+            ]}
+          >
+            <Input placeholder="Enter your phone number" />
+          </Form.Item>
+
           <Form.Item
             name="zip"
             label="Zip Code"
