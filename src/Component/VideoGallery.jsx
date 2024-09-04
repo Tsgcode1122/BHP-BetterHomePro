@@ -121,9 +121,9 @@ const Container = styled.div`
 // Example Cloudinary video links
 const videos = [
   "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1724037926/RPReplay_Final1723980500_2_a0pd3z.mov",
-  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1724036110/RPReplay_Final1724034988_reizpx.mov",
-  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723986786/RPReplay_Final1723980761_z8lucn.mov",
-  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1723984777/RPReplay_Final1723980643_dfuwxe.mov",
+  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1725488225/copy_AA959184-9B65-420C-803A-3B12524A27DA_ihbeks.mov",
+  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1725487599/copy_CB0538E3-41B5-47E2-B184-53752F516827_mnvdrn.mov",
+  "https://res.cloudinary.com/dhl0zyg5k/video/upload/v1725487769/copy_91F7CB82-E3CD-4594-A2E2-6F5F88E53FE6_azubqm.mov",
 ];
 
 // Example images associated with the videos
