@@ -17,7 +17,7 @@ const AppointmentContent = () => {
           </SkeletonContainer>
         )}
         <Iframe
-          src="https://betterhomepros.setmore.com/betterhomepros"
+          src="https://thebetterhomepros.setmore.com/amitai"
           title="Appointment Scheduling"
           frameBorder="0"
           onLoad={handleLoad} // Call handleLoad when iframe has loaded
