@@ -7,9 +7,8 @@ import { Gradients } from "../Colors/ColorComponent";
 const { Option } = Select;
 
 const services = [
-  "HVAC Services",
   "Air Duct Cleaning",
-  "Chimney Repair",
+  "Chimney Service",
   "Carpet Cleaning",
   "Dryer Vent Cleaning",
   "Others",
@@ -40,7 +39,11 @@ const ContactForm = () => {
     <Wrapper>
       <FormContainer>
         <Header>Contact Us</Header>
-        <SubText>We'd love to hear from you. Fill out the form below.</SubText>
+        <SubText>
+          Thank you for choosing The Better Home Pros to service your home or
+          business. Please provide your complete details below and one of our
+          team members will be in contact with you soon.
+        </SubText>
         <Form
           form={form}
           name="contact_form"
