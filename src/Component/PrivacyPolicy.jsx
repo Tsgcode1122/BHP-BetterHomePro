@@ -70,10 +70,11 @@ const PrivacyPolicy = () => {
       <Info>
         <SubTitle>Introduction</SubTitle>
         <Section>
-          Better Home Pros ("we", "our", or "us") respects your privacy and is
-          committed to protecting your personal information. This Privacy Policy
-          describes how we collect, use, and share your information when you
-          visit our website or interact with us through other digital platforms.
+          The Better Home Pros ("we", "our", or "us") respects your privacy and
+          is committed to protecting your personal information. This Privacy
+          Policy describes how we collect, use, and share your information when
+          you visit our website or interact with us through other digital
+          platforms.
         </Section>
       </Info>
       <Info>
