@@ -21,13 +21,13 @@ const AboutContent = () => {
       <Contain>
         <DownToUp>
           <p>
-            Better Home Pros is a family-owned business dedicated to exceptional
-            customer satisfaction and professionalism. Our certified technicians
-            are trained in the latest techniques to guarantee your home is free
-            of any harmful bacteria and germs, ensuring a healthy environment
-            for you and your loved ones. At Better Home Pros, we take pride in
-            our work. No job is too small or too big. Let's get started with a{" "}
-            <span>Better Home</span> for you and your loved ones!
+            The Better Home Pros is a family-owned business dedicated to
+            exceptional customer satisfaction and professionalism. Our certified
+            technicians are trained in the latest techniques to guarantee your
+            home is free of any harmful bacteria and germs, ensuring a healthy
+            environment for you and your loved ones. At Better Home Pros, we
+            take pride in our work. No job is too small or too big. Let's get
+            started with a <span>Better Home</span> for you and your loved ones!
           </p>
         </DownToUp>
 
