@@ -19,7 +19,7 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
   font-size: 1.3rem;
   margin-top: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   color: #000000;
   @media screen and (max-width: 320px) {
     font-size: 1rem;
@@ -51,6 +51,7 @@ const Section = styled.div`
 
 const List = styled.ul`
   padding-left: 20px;
+  margin: 0;
 `;
 
 const ContactDetails = styled.div`
@@ -124,9 +125,11 @@ const PrivacyPolicy = () => {
               etc.)
             </li>
           </List>
-          By opting in to receive SMS communications from Better Home Pros, you
-          agree to receive text messages regarding appointments, promotions,
-          service updates, and other relevant information.
+          <i>
+            By opting in to receive SMS communications from Better Home Pros,
+            you agree to receive text messages regarding appointments,
+            promotions, service updates, and other relevant information.
+          </i>
           <br />
           <br />
           Your SMS consent is{" "}
@@ -135,7 +138,7 @@ const PrivacyPolicy = () => {
           by replying STOP, and request help by replying HELP.
           <br />
           <br />
-          Message frequency may vary. Message and data rates may apply.
+          <i>Message frequency may vary. Message and data rates may apply.</i>
         </Section>
       </Info>
       <Info>
@@ -148,8 +151,10 @@ const PrivacyPolicy = () => {
             <li>Measure ad performance</li>
             <li>Improve website functionality</li>
           </List>
-          You can disable cookies through your browser settings, but this may
-          affect your experience.
+          <i>
+            You can disable cookies through your browser settings, but this may
+            affect your experience.
+          </i>
         </Section>
       </Info>
       <Info>
@@ -169,7 +174,7 @@ const PrivacyPolicy = () => {
               services
             </li>
           </List>
-          We do not sell your personal information.
+          <i>We do not sell your personal information.</i>
         </Section>
       </Info>
       <Info>
@@ -182,7 +187,10 @@ const PrivacyPolicy = () => {
             <li>Opt out of marketing communications</li>
             <li>Request that we do not track you via cookies</li>
           </List>
-          To exercise your rights, contact us at: contact@thebetterhomepros.com
+          <i>
+            To exercise your rights, contact us at:
+            contact@thebetterhomepros.com
+          </i>
         </Section>
       </Info>
       <Info>

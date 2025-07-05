@@ -65,7 +65,7 @@ const Footer = () => {
                 <span>Gallery {""} ||</span>
               </LinkC>
               <LinkC to="/Policies">
-                <span>Privacy Policy {""} ||</span>
+                <span>Privacy Policy {""} </span>
               </LinkC>
             </LinkBig>
           </QuickLink>
