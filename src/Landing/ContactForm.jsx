@@ -99,7 +99,14 @@ const ContactForm = () => {
               ))}
             </Select>
           </Form.Item>
-
+          <Form.Item
+            name="coupon"
+            rules={[
+              { required: true, message: "Please enter your coupon code" },
+            ]}
+          >
+            <Input placeholder="Coupon Code" size="large" />
+          </Form.Item>
           <Form.Item
             name="message"
             rules={[
