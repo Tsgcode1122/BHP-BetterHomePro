@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Form, Input, Select, Button, message } from "antd";
+import { Form, Input, Select, Button } from "antd";
 import axios from "axios";
 import styled from "styled-components";
 import { Gradients } from "../Colors/ColorComponent";
+import toast, { Toaster } from "react-hot-toast";
 
 const { Option } = Select;
 
@@ -25,11 +26,11 @@ const ContactForm = () => {
         "https://betterprobackend.onrender.com/api/email/formSubmission",
         values,
       );
-      message.success("Thank you! Your request has been submitted.");
+      toast.success("Thank you! Your request has been submitted.");
       form.resetFields();
     } catch (error) {
       console.error(error);
-      message.error("Submission failed. Please try again.");
+      toast.error("Submission failed. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -37,6 +38,7 @@ const ContactForm = () => {
 
   return (
     <Wrapper>
+      <Toaster position="top-center" reverseOrder={false} />
       <FormContainer>
         <Header>Contact Us</Header>
         <SubText>

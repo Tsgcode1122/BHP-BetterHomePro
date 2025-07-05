@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 import { Form, Input, Select, Button, notification, message } from "antd";
 import axios from "axios";
@@ -39,14 +40,7 @@ const ContactUs = () => {
         values,
       );
 
-      // Show success notification
-      message.success({
-        content: "Your message has been sent successfully.",
-        style: {
-          textAlign: "center",
-          marginTop: "20px",
-        },
-      });
+      toast.success("Thank you! Your request has been submitted.");
 
       // Reset form fields
       form.resetFields();
@@ -102,6 +96,7 @@ const ContactUs = () => {
         </Image>
       </Cont>
       <FormContainer>
+        <Toaster position="top-center" reverseOrder={false} />
         <Form
           form={form}
           name="contact_us"
