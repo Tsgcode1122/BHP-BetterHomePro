@@ -17,6 +17,7 @@ import { Colors } from "./Colors/ColorComponent";
 import SingleService from "./Component/SingleService";
 import PrivacyPolicy from "./Component/PrivacyPolicy";
 import PolicyPage from "./Pages/PolicyPage";
+import ContactForm from "./Landing/ContactForm";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -99,6 +100,7 @@ const routes = [
       { path: "/services", element: <Services /> },
       { path: "/gallery", element: <Gallery /> },
       { path: "/Policies", element: <PolicyPage /> },
+      { path: "/contact-us", element: <ContactForm /> },
       {
         path: "/services/:serviceId",
         element: <SingleService />,
