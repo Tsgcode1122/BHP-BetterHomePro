@@ -15,6 +15,8 @@ import { Result, Button } from "antd";
 import Layout from "./FixedComponent/Layout";
 import { Colors } from "./Colors/ColorComponent";
 import SingleService from "./Component/SingleService";
+import PrivacyPolicy from "./Component/PrivacyPolicy";
+import PolicyPage from "./Pages/PolicyPage";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -96,6 +98,7 @@ const routes = [
 
       { path: "/services", element: <Services /> },
       { path: "/gallery", element: <Gallery /> },
+      { path: "/Policies", element: <PolicyPage /> },
       {
         path: "/services/:serviceId",
         element: <SingleService />,

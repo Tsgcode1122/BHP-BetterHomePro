@@ -87,6 +87,10 @@ const Navbar = () => {
               <span>Gallery</span>
               <IoMdArrowDropright />
             </LinkCont>
+            <LinkCont to="/Policies" onClick={closeSidebar}>
+              <span>Policies</span>
+              <IoMdArrowDropright />
+            </LinkCont>
           </LinkContainer>
         </SidebarContent>
       </Sidebar>
@@ -117,6 +121,9 @@ const Navbar = () => {
             </LinkC>
             <LinkC to="/gallery">
               <span>Gallery</span>
+            </LinkC>
+            <LinkC to="/Policies">
+              <span>Privacy Policies</span>
             </LinkC>
           </LinkBig>
         </BigCon>
