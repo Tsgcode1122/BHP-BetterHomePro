@@ -18,6 +18,7 @@ import SingleService from "./Component/SingleService";
 import PrivacyPolicy from "./Component/PrivacyPolicy";
 import PolicyPage from "./Pages/PolicyPage";
 import ContactForm from "./Landing/ContactForm";
+import BookingPage from "./Component/BookingPage";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -95,8 +96,7 @@ const routes = [
       { index: true, path: "/", element: <Home /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
-      { path: "/appointment", element: <Appointment /> },
-
+      { path: "/appointment", element: <BookingPage /> },
       { path: "/services", element: <Services /> },
       { path: "/gallery", element: <Gallery /> },
       { path: "/Policies", element: <PolicyPage /> },

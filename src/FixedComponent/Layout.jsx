@@ -17,7 +17,7 @@ const Layout = () => {
       <Outlet />
       <ScrollToTopButton />
       {/* Conditionally render Footer only if not on the appointment page */}
-      {!isAppointmentPage && <Footer />}
+      {<Footer />}
     </>
   );
 };
