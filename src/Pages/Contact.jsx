@@ -17,9 +17,9 @@ const { Option } = Select;
 
 const services = [
   "Select Service",
-  "HVAC Services",
+
   "Air Duct Cleaning",
-  "Chimney Repair",
+  "Chimney Service",
   "Carpet Cleaning",
   "Dryer Vent Cleaning",
   "Others",

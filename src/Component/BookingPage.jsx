@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form, Input, DatePicker, Button, message, TimePicker } from "antd";
 import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
@@ -70,6 +70,9 @@ const pageVariants = {
 const transition = { duration: 0.3, ease: "easeInOut" }; // Faster animation
 
 const BookingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const [step, setStep] = useState(1);
   const [selectedService, setSelectedService] = useState("");
   const [loading, setLoading] = useState(false);
