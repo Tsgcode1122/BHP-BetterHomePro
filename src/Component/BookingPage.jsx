@@ -16,7 +16,7 @@ const Main = styled.div`
   background-color: white;
 `;
 const BookingContainer = styled.div`
-  max-width: 800px;
+  max-width: 600px;
   background-color: white;
 
   margin: 50px auto;
@@ -207,7 +207,10 @@ const BookingPage = () => {
                     <TimePicker style={{ width: "100%" }} />
                   </Form.Item>
                   <Form.Item name="comment">
-                    <Input.TextArea placeholder="Additional Comments (Optional)" />
+                    <Input.TextArea
+                      placeholder="Additional Comments (Optional)"
+                      rows={6}
+                    />
                   </Form.Item>
 
                   <Button
