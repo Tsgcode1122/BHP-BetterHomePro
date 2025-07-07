@@ -18,6 +18,7 @@ const Main = styled.div`
 const BookingContainer = styled.div`
   max-width: 800px;
   background-color: white;
+
   margin: 50px auto;
   padding: 20px;
   overflow: hidden;
@@ -26,6 +27,7 @@ const BookingContainer = styled.div`
 
 const ServicesContainer = styled.div`
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 40px;
@@ -46,24 +48,17 @@ const ServiceCard = styled.div`
   justify-content: space-between;
 
   &:hover {
-    border-color: #40a9ff;
+    border-color: #4f7716;
   }
-`;
-
-const CircleArrow = styled.div`
-  width: 30px;
-  height: 30px;
-  border: 1px solid #333;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const PageWrapper = styled.div`
   position: relative;
-  width: 100%;
-  min-height: 400px;
+  background-color: #fcfcfc;
+  /* min-height: 400px; */
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
 `;
 
 const pageVariants = {
@@ -220,7 +215,11 @@ const BookingPage = () => {
                     htmlType="submit"
                     loading={loading}
                     block
-                    style={{ backgroundColor: "green", borderColor: "green" }}
+                    style={{
+                      backgroundColor: "green",
+                      borderColor: "green",
+                      marginBottom: "20px",
+                    }}
                   >
                     Confirm Booking
                   </Button>
