@@ -152,7 +152,11 @@ const BookingPage = () => {
                   type="link"
                   icon={<ArrowLeftOutlined />}
                   onClick={handleBack}
-                  style={{ marginBottom: "20px" }}
+                  style={{
+                    marginBottom: "20px",
+                    marginLeft: "-15px",
+                    color: "black",
+                  }}
                 >
                   Back
                 </Button>
