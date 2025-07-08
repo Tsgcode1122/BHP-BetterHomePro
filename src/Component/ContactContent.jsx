@@ -13,8 +13,6 @@ import ContactUs from "./ContactUs";
 import MiniContact from "./MiniContact";
 
 const ContactContent = () => {
-  const googleMapsLink =
-    "https://www.google.com/maps/search/?api=1&query=1418+Manoa+Rd,+Wynnewood,+PA+19096";
   return (
     <ContactContainer>
       <MiniContact />
