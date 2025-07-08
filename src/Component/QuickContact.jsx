@@ -109,7 +109,7 @@ const QuickContact = () => {
           <p>Get a Free Quote Now !!!</p>
           <ContactItem>
             <PhoneOutlined />
-            <a href="tel:+13072224021">704-360-8083</a>
+            <a href="tel:+17043608083">704-360-8083</a>
           </ContactItem>
           {/* Add other contact items as needed */}
         </Contact>
