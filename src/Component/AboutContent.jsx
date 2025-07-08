@@ -36,16 +36,16 @@ const AboutContent = () => {
           <Content>
             <ContactItem>
               <PhoneOutlined />
-              <a href="tel:+13072224021">704-360-8083</a>
+              <a href="tel:+17043608083">704-360-8083</a>
             </ContactItem>
             <ContactItem>
               <InstagramOutlined />
               <a
-                href="https://www.instagram.com/BetterHome_pros"
+                href="https://www.instagram.com/thebetterhome_pros"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                BetterHome_pros
+                TheBetterHome_pros
               </a>
             </ContactItem>
             <ContactItem>
