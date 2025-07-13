@@ -20,8 +20,8 @@ const Container = styled.div`
   color: #000;
   overflow: hidden;
   padding-bottom: 2rem;
-  @media screen and (min-width: 1200px) {
-    margin: 0 9rem;
+  @media screen and (min-width: 1300px) {
+    padding: 0 9rem;
   }
 `;
 
@@ -75,7 +75,7 @@ const SubHeading = styled.p`
 
 const ReviewCard = styled.div`
   background: ${Colors.lightgreen} !important;
-  min-width: 300px;
+  min-width: 370px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: left;
@@ -87,11 +87,11 @@ const ReviewCard = styled.div`
     padding: 8px;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    min-width: 280px;
+    min-width: 310px;
     padding: 8px;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    min-width: 280px;
+    min-width: 340px;
     padding: 8px;
   }
 `;
@@ -99,18 +99,18 @@ const ReviewCard = styled.div`
 const ReviewText = styled.p`
   font-size: 0.8rem;
   margin-bottom: 10px;
-  min-height: 80px;
+  min-height: 110px;
   @media screen and (max-width: 320px) {
     font-size: 0.8rem;
   }
   @media (min-width: 321px) and (max-width: 399px) {
     font-size: 0.9rem;
 
-    min-height: 110px;
+    min-height: 170px;
   }
   @media (min-width: 400px) and (max-width: 499px) {
     font-size: 0.9rem;
-    min-height: 110px;
+    min-height: 170px;
   }
 `;
 
@@ -153,12 +153,23 @@ const SpanReview = styled.div`
   background: #f4faf1;
   border-radius: 10px;
   padding: 20px 30px;
+  min-height: 12rem;
+  @media screen and (max-width: 320px) {
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    min-height: 16rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    min-height: 15rem;
+  }
 `;
 
 const Rev = styled.div`
   display: flex;
+  width: 100%;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  /* gap: 20px; */
 `;
 const ReviewerDetails = styled.div`
   display: flex;
@@ -287,20 +298,26 @@ const Reviews = () => {
 
               <ReviewerDetails>
                 <Rev>
-                  <ReviewerImg>
-                    <img
-                      src={review.image}
-                      style={{
-                        marginLeft: "auto",
-                        maxWidth: "100%",
-                        height: "20px",
-                      }}
-                    />
-                  </ReviewerImg>
-
-                  <Reviewer>{review.reviewer}</Reviewer>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                    }}
+                  >
+                    <ReviewerImg>
+                      <img
+                        src={review.image}
+                        style={{
+                          marginLeft: "auto",
+                          maxWidth: "100%",
+                          height: "20px",
+                        }}
+                      />
+                    </ReviewerImg>
+                    <Reviewer>{review.reviewer}</Reviewer>{" "}
+                  </div>
+                  <ReviewDate>{review.date}</ReviewDate>
                 </Rev>
-                <ReviewDate>{review.date}</ReviewDate>
               </ReviewerDetails>
             </SpanReview>
           </ReviewCard>
