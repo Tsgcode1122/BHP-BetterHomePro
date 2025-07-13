@@ -4,6 +4,7 @@ import axios from "axios";
 import styled from "styled-components";
 import { Gradients } from "../Colors/ColorComponent";
 import toast, { Toaster } from "react-hot-toast";
+import Reviews from "./Reviews";
 
 const { Option } = Select;
 
@@ -37,95 +38,100 @@ const ContactForm = () => {
   };
 
   return (
-    <Wrapper>
-      <Toaster position="top-center" reverseOrder={false} />
-      <FormContainer>
-        <Header>Contact Us</Header>
-        <SubText>
-          Thank you for choosing The Better Home Pros to service your home or
-          business. Please provide your complete details below and one of our
-          team members will be in contact with you soon.
-        </SubText>
-        <Form
-          form={form}
-          name="contact_form"
-          layout="vertical"
-          onFinish={onFinish}
-        >
-          <Form.Item
-            name="name"
-            rules={[{ required: true, message: "Please enter your name" }]}
+    <>
+      <Wrapper>
+        <Toaster position="top-center" reverseOrder={false} />
+        <FormContainer>
+          <Header>Contact Us</Header>
+          <SubText>
+            Thank you for choosing The Better Home Pros to service your home or
+            business. Please provide your complete details below and one of our
+            team members will be in contact with you soon.
+          </SubText>
+          <Form
+            form={form}
+            name="contact_form"
+            layout="vertical"
+            onFinish={onFinish}
           >
-            <Input placeholder="Your Name" size="large" />
-          </Form.Item>
+            <Form.Item
+              name="name"
+              rules={[{ required: true, message: "Please enter your name" }]}
+            >
+              <Input placeholder="Your Name" size="large" />
+            </Form.Item>
 
-          <Form.Item
-            name="email"
-            rules={[
-              { required: true, message: "Please enter your email" },
-              { type: "email", message: "Enter a valid email" },
-            ]}
-          >
-            <Input placeholder="Your Email" size="large" />
-          </Form.Item>
+            <Form.Item
+              name="email"
+              rules={[
+                { required: true, message: "Please enter your email" },
+                { type: "email", message: "Enter a valid email" },
+              ]}
+            >
+              <Input placeholder="Your Email" size="large" />
+            </Form.Item>
 
-          <Form.Item
-            name="number"
-            rules={[
-              { required: true, message: "Please enter your phone number" },
-              {
-                pattern: /^\+?[0-9\s\-()]{7,15}$/,
-                message: "Enter a valid phone number",
-              },
-            ]}
-          >
-            <Input placeholder="Phone Number" size="large" />
-          </Form.Item>
+            <Form.Item
+              name="number"
+              rules={[
+                { required: true, message: "Please enter your phone number" },
+                {
+                  pattern: /^\+?[0-9\s\-()]{7,15}$/,
+                  message: "Enter a valid phone number",
+                },
+              ]}
+            >
+              <Input placeholder="Phone Number" size="large" />
+            </Form.Item>
 
-          <Form.Item
-            name="zip"
-            rules={[{ required: true, message: "Please enter your zip code" }]}
-          >
-            <Input placeholder="Zip Code" size="large" />
-          </Form.Item>
+            <Form.Item
+              name="zip"
+              rules={[
+                { required: true, message: "Please enter your zip code" },
+              ]}
+            >
+              <Input placeholder="Zip Code" size="large" />
+            </Form.Item>
 
-          <Form.Item
-            name="service"
-            rules={[{ required: true, message: "Please select a service" }]}
-          >
-            <Select placeholder="Select a Service" size="large">
-              {services.map((service, index) => (
-                <Option key={index} value={service}>
-                  {service}
-                </Option>
-              ))}
-            </Select>
-          </Form.Item>
-          <Form.Item
-            name="coupon"
-            rules={[{ message: "Please enter your coupon code" }]}
-          >
-            <Input placeholder="Coupon Code" size="large" />
-          </Form.Item>
-          <Form.Item
-            name="message"
-            rules={[
-              { required: true, message: "Please provide additional info" },
-            ]}
-          >
-            <Input.TextArea
-              placeholder="Additional Information"
-              rows={4}
-              size="large"
-            />
-          </Form.Item>
+            <Form.Item
+              name="service"
+              rules={[{ required: true, message: "Please select a service" }]}
+            >
+              <Select placeholder="Select a Service" size="large">
+                {services.map((service, index) => (
+                  <Option key={index} value={service}>
+                    {service}
+                  </Option>
+                ))}
+              </Select>
+            </Form.Item>
+            <Form.Item
+              name="coupon"
+              rules={[{ message: "Please enter your coupon code" }]}
+            >
+              <Input placeholder="Coupon Code" size="large" />
+            </Form.Item>
+            <Form.Item
+              name="message"
+              rules={[
+                { required: true, message: "Please provide additional info" },
+              ]}
+            >
+              <Input.TextArea
+                placeholder="Additional Information"
+                rows={4}
+                size="large"
+              />
+            </Form.Item>
 
-          <ButtonS type="primary" htmlType="submit" loading={loading}>
-            Submit
-          </ButtonS>
-        </Form>
-      </FormContainer>
-    </Wrapper>
+            <ButtonS type="primary" htmlType="submit" loading={loading}>
+              Submit
+            </ButtonS>
+          </Form>
+        </FormContainer>
+      </Wrapper>
+      <Reviews />
+    </>
   );
 };
 
