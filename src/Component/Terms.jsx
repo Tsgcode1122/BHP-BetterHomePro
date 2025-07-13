@@ -36,16 +36,19 @@ const Section = styled.div`
   margin-bottom: 1px;
   line-height: 1.8;
   @media screen and (max-width: 320px) {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+
+    line-height: 1.4;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 0.9rem;
+
+    line-height: 1.4;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 0.9rem;
+
+    line-height: 1.4;
   }
 `;
 
