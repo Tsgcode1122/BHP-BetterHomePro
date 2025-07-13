@@ -91,6 +91,10 @@ const Navbar = () => {
               <span>Policies</span>
               <IoMdArrowDropright />
             </LinkCont>
+            <LinkCont to="/terms" onClick={closeSidebar}>
+              <span>Terms and Conditions</span>
+              <IoMdArrowDropright />
+            </LinkCont>
           </LinkContainer>
         </SidebarContent>
       </Sidebar>
@@ -125,6 +129,9 @@ const Navbar = () => {
             <LinkC to="/Policies">
               <span>Privacy Policies</span>
             </LinkC>
+            <LinkC to="/terms">
+              <span>Terms and Conditions</span>
+            </LinkC>
           </LinkBig>
         </BigCon>
       </BigNav>
@@ -136,7 +143,7 @@ const BigNav = styled.div`
   width: 100%;
   top: 0;
   display: none;
-  @media screen and (min-width: 820px) {
+  @media screen and (min-width: 1020px) {
     display: block;
   }
   z-index: 999 !important;
@@ -208,7 +215,7 @@ const StyledNavbar = styled.div`
     max-width: 100%;
     height: 40px;
   }
-  @media screen and (min-width: 820px) {
+  @media screen and (min-width: 1020px) {
     display: none;
   }
 `;
