@@ -87,7 +87,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Better Home Pros
+              The Better Home Pros
             </a>
           </ContactItem>
         </Content>

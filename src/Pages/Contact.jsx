@@ -105,7 +105,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Better Home Pros
+                The Better Home Pros
               </a>
             </ContactItem>
           </Content>
@@ -281,9 +281,7 @@ const FormContainer = styled.div`
   border-radius: 10px;
   margin-top: 20px;
   background: ${Colors.lightgreen};
-  box-shadow:
-    rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
   @media screen and (min-width: 800px) {
     margin-top: 0px;
