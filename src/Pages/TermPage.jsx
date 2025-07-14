@@ -15,7 +15,7 @@ const TermPage = () => {
       <PageHeading
         backgroundImage={backgroundImage}
         text="Terms and Conditions  "
-        intro="Effective Date: July 3, 2025"
+        intro="Effective Date: July 3, 2022"
       />
       <Terms />
     </>

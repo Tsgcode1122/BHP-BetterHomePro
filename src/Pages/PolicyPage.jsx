@@ -14,7 +14,7 @@ const PolicyPage = () => {
       <PageHeading
         backgroundImage={backgroundImage}
         text="Privacy Policies "
-        intro="Effective Date: July 3, 2025"
+        intro="Effective Date: July 3, 2022"
       />
       <PrivacyPolicy />
     </>
