@@ -1,6 +1,7 @@
+// src 
 export const Colors = {
   green: "#4F7716",
-  lighterGreen: "#E5EFDC",
+  // lighterGreen: "#E5EFDC",
   lightgreen: "#E5EFDC",
   darkgreen: "#325300",
   blue: "#294EB7",
