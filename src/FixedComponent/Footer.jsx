@@ -16,7 +16,7 @@ const Footer = () => {
       // Send email to backend
       await axios.post(
         "https://betterprobackend.onrender.com/api/email/subscriber",
-        values,
+        values
       );
       // Reset form fields
       form.resetFields();
@@ -73,7 +73,7 @@ const Footer = () => {
             </LinkBig>
           </QuickLink>
           <SocialMedia>
-            <SocialIcon href="https://www.facebook.com/BetterHomePros">
+            <SocialIcon href="https://www.facebook.com/share/1C96bdXPt2/">
               <FaFacebookF />
             </SocialIcon>
             <SocialIcon href="https://www.instagram.com/BetterHome_pros">
@@ -195,8 +195,7 @@ const LogoContainer = styled.div`
   margin-top: -3rem;
 
   img {
-    box-shadow:
-      rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
     max-width: 150px;
     @media screen and (min-width: 1000px) {
